@@ -1,4 +1,5 @@
-<header class="span4 offset3">
+
+<header class="span5 offset3">
 	<h1><%= link_to "Hack Startups", root_path, :class => "brand" %></h1>
 </header>
 
@@ -7,39 +8,40 @@
 </section>
 <%= bootstrap_flash %>
 
-<section class="span3 signup">
+<section class="span12 offset4 signup">
 
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
+		<%= f.error_notification %>
+		<%= f.input :email, label: ''%>
 
-	<%= f.error_notification %>
-	<%= f.input :email, label: ''%>
-
-	<%= f.button :submit, class: "btn btn-primary", value: "Sign up" %>
+		<%= f.button :submit, class: "btn btn-primary", value: "Sign up" %>
 	<% end %>	
+
 </section>
-<section class="span10 organizers">
-	<h1>Organizers</h1>
-		<ul>
-			<li>
-				<img src="#">
-				<h1>Marco Morawec</h1>
-				<h2>Web Developer</h2>
-			</li>
-			<li>
-				<img src="#">
-				<h1>Sara Garver</h1>
-				<h2>Business Evangelist</h2>
-			</li>
-			<li>
-				<img src="#">
-				<h1>Emily Mills</h1>
-				<h2>UX Designer</h2>
-			</li>
-			<li>
-				<img src="#">
-				<h1>Isaac Girard</h1>
-				<h2>Front-end Developer</h2>
-			</li>
-		</ul>
-	<p>Marco, Sara, Emily, Isaac</p>
+<section class="span12 organizers">
+		<h1>Organizers</h1>
+	<div class="row">
+
+				<div class="span3">
+					<img src="#">
+					<h1>Marco Morawec</h1>
+					<h2>Web Developer</h2>
+				</div>
+				<div class="span3">
+					<img src="#">
+					<h1>Sara Garver</h1>
+					<h2>Business Evangelist</h2>
+				</div>		
+				<div class="span3">
+					<img src="#">
+					<h1>Emily Mills</h1>
+					<h2>UX Designer</h2>
+				</div>
+				<div class="span3">
+					<img src="#">
+					<h1>Isaac Girard</h1>
+					<h2>Front-end Developer</h2>
+				</div>
+	</div>
 </section>
+
