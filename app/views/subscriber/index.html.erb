@@ -17,15 +17,34 @@
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 
 	<%= f.error_notification %>
-	<%= f.input :email, label: 'Your email' %>
+	<%= f.input :email %>
 
 	<%= f.button :submit, class: "btn btn-primary", value: "Get my Lesson" %>
 	<% end %>	
 </section>
 <section class="span10 organizers">
-
-	<h1>organizers
-
+	<h1>Organizers<h1>
+		<ul>
+			<li>
+				<img src="#">
+				<h1>Marco Morawec</h1>
+				<h2>Web Developer</h2>
+			</li>
+			<li>
+				<img src="#">
+				<h1>Sara Garver</h1>
+				<h2>Business Evangelist</h2>
+			</li>
+			<li>
+				<img src="#">
+				<h1>Emily Mills</h1>
+				<h2>UX Designer</h2>
+			</li>
+			<li>
+				<img src="#">
+				<h1>Isaac Girard</h1>
+				<h2>Front-end Developer</h2>
+			</li>
+		</ul>
 	<p>Marco, Sara, Emily, Isaac</p>
-
 </section>
