@@ -1,44 +1,47 @@
 
-<header class="span5 offset3">
+<header class="offset3 span6 text-center main-message-box">
 	<h1><%= link_to "Hack Startups", root_path, :class => "brand" %></h1>
 </header>
 
-<section class="span6 offset2 message main-message">
-	<h2>Receive top curated information from founders straight to your inbox</h2>
-</section>
+
+	<section class="offset3 span6 text-center message main-message-box">
+		<h2 class="main-message">Receive top curated information from founders straight to your inbox</h2>
+	</section>
+
 <%= bootstrap_flash %>
 
-<section class="span12 offset4 signup">
-
+<section class="offset3 span6 text-center signup sign-up-well ">
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 		<%= f.error_notification %>
-		<%= f.input :email, label: ''%>
+		<%= f.input :email, label: false, placeholder: 'We never share your email', :html => { :class=>'input-xlarge'}, wrapper_html: { class: 'input-append' }%>
 
-		<%= f.button :submit, class: "btn btn-primary", value: "Sign up" %>
+		<%= f.button :submit, class: "btn btn-primary custom-button", value: "Sign up"  %>
 	<% end %>	
 
 </section>
+<div class="offset3 span6 text-center">
+		<h1>Founding Team</h1>
+</div>
 <section class="span12 organizers">
-		<h1>Organizers</h1>
 	<div class="row">
 
 				<div class="span3">
-					<img src="#">
+					<%= image_tag('marco.jpg') %>
 					<h1>Marco Morawec</h1>
 					<h2>Web Developer</h2>
 				</div>
 				<div class="span3">
-					<img src="#">
+					<%= image_tag('sara.jpg') %>
 					<h1>Sara Garver</h1>
 					<h2>Business Evangelist</h2>
 				</div>		
 				<div class="span3">
-					<img src="#">
+					<%= image_tag('emily.jpg') %>
 					<h1>Emily Mills</h1>
 					<h2>UX Designer</h2>
 				</div>
 				<div class="span3">
-					<img src="#">
+					<%= image_tag('isaac.jpg') %>
 					<h1>Isaac Girard</h1>
 					<h2>Front-end Developer</h2>
 				</div>
