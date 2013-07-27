@@ -8,27 +8,24 @@
 		<li><a href="#">Sign in</a></li>
 	</ul>
 </nav>
+<section class="span5 message">
+<h2>Receive top curated information from founders straight to your inbox.</h2>
+</section>
 <%= bootstrap_flash %>
-<section class="span3">
+<section class="span3 signup">
 
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 
 	<%= f.error_notification %>
-  	<%= f.input :email, label: 'Your email' %>
+	<%= f.input :email, label: 'Your email' %>
 
-  	<%= f.button :submit, class: "btn btn-primary", value: "Get my Lesson" %>
-  	<% end %>	
+	<%= f.button :submit, class: "btn btn-primary", value: "Get my Lesson" %>
+	<% end %>	
+</section>
+<section class="span10 organizers">
 
+	<h1>organizers
 
- 
+	<p>Marco, Sara, Emily, Isaac</p>
 
-
-</div>
-
-<div class="span10">
-
-<h5>Meet your instructors</h5>
-
-<p>Marco, Sara, Emily, Isaac</p>
-
-</div>
+</section>
