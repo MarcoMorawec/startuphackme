@@ -30,7 +30,15 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'devise'
 
+#for social sharing
 gem 'shareable'
+
+#for image uploading
+gem 'rmagick'
+gem 'carrierwave'
+#for Amzon S3 services
+gem 'fog'
+gem 'figaro'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
