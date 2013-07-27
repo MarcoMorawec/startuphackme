@@ -10,7 +10,8 @@ Amazon S3 integration for picture upload
 	- add image field to db
 	- add the gems -> done
 	- adjut the views and edit/new actions
-	- setup a S3 bucket 
-	- add the user credentials
+	- setup a S3 bucket -done
+	- add the user credentials - done
+	
 Hide edit&delete for non-admin users on lesson detail page
 
