@@ -22,6 +22,14 @@ end
 
 gem 'jquery-rails'
 
+#better forms
+gem 'simple_form'
+
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'devise'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
