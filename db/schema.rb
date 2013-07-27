@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130727041559) do
+ActiveRecord::Schema.define(:version => 20130727153255) do
 
   create_table "lessons", :force => true do |t|
     t.string   "name"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20130727041559) do
     t.string   "third_ressource_headline_link"
     t.string   "fourth_ressource_headline_link"
     t.string   "fifth_ressource_headline_link"
+    t.string   "curator"
   end
 
   create_table "subscribers", :force => true do |t|

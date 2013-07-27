@@ -28,6 +28,9 @@
 	<h4><%= @lesson.fifth_ressource_text%></h4>
 	</p>
 
+	<p>
+		<%= image_tag @lesson.curator_url(:curator).to_s %>
+	<p>
 	<h3>
 		Curator: <%= @lesson.curator_name %>
 	</h3>
