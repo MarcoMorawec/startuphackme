@@ -2,7 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// common elements
+// partial imports
+@import "_type.scss";
+
+// vav elements
 nav {
 
 	ul {
@@ -13,3 +16,4 @@ nav {
 		display: inline;
 	}
 }
+
