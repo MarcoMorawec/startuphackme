@@ -13,7 +13,7 @@ Amazon S3 integration for picture upload
 	- setup a S3 bucket -done
 	- add the user credentials - done
 	
-Hide edit&delete for non-admin users on lesson detail page
+Hide edit&delete for non-admin users on lesson detail page - done
 
 
 
