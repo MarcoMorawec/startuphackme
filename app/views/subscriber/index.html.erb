@@ -1,21 +1,12 @@
 <header class="span4 offset3">
-	<h1>startup hack</h1>
-<nav class="menu">
-	<ul>
-	    <li><%= link_to "Lessons", lessons_path  %></li>
-    
-          <% if user_signed_in? %>
-	          <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %> </li>
-	          <% else %>
-	          <li><%= link_to "Login", new_user_session_path %> </li>
-          <% end %>
-    </ul>
-</nav>
+	<h1><%= link_to "Hack Startups", root_path, :class => "brand" %></h1>
 </header>
-<section class="span6 offset3 message">
-<h2>Receive top curated information from founders straight to your inbox.</h2>
+
+<section class="span6 offset2 message main-message">
+	<h2>Receive top curated information from founders straight to your inbox</h2>
 </section>
 <%= bootstrap_flash %>
+
 <section class="span3 signup">
 
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
