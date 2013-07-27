@@ -7,35 +7,35 @@
   <%= csrf_meta_tags %>
 </head>
 
-   <div class="navbar navbar-fluid-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <%= link_to "Hack Startups", root_path, :class => "brand" %>
-          <div class="container-fluid nav-collapse">
-            <ul class="nav">
-              <li><%= link_to "See all Lessons", lessons_path  %></li>
-            </ul>
-            <ul class="nav pull-right">
-              <% if user_signed_in? %>
-                <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %> </li>
-              <% else %>
-                <li><%= link_to "Login", new_user_session_path %> </li>
-              <% end %>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
+<div class="navbar navbar-fluid-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <%= link_to "Hack Startups", root_path, :class => "brand" %>
+      <div class="container-fluid nav-collapse">
+        <ul class="nav">
+          <li><%= link_to "See all Lessons", lessons_path  %></li>
+        </ul>
+        <ul class="nav pull-right">
+          <% if user_signed_in? %>
+          <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %> </li>
+          <% else %>
+          <li><%= link_to "Login", new_user_session_path %> </li>
+          <% end %>
+        </ul>
+      </div><!--/.nav-collapse -->
     </div>
+  </div>
+</div>
 
 <body>
-<div class="container">
+  <div class="container">
 
-<%= yield %>
-
+    <%= yield %>
+  </div>
 </body>
 </html>
