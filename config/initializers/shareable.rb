@@ -60,11 +60,11 @@ Shareable.configure do |config|
   ##############
   config.via='StartupHackers'
   config.text='An easy to follow Startup course for people who do amazing things'
-  #config.related=''
+  #config.related='testing related'
   config.count='horizontal'
   #config.lang='en'
   config.counturl='http://www.startuphackers.com'
   config.hashtags='#StartupHackers'
-  config.size='medium'
+  config.size='large'
   #config.dnt=''
 end
