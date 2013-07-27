@@ -30,5 +30,38 @@
 
 .team-background {
 	background: url('bg.png') repeat scroll 0 0 transparent; 
-	
+
 }
+
+
+@font-face {
+	family: Museo-700;
+	src: url('./fonts/27D743_0_0.eot');
+	src: url('./fonts/27D743_0_0.eot?#iefix') 
+	format('embedded-opentype'),
+	url('../fonts/27D743_0_0.woff') format('woff'),
+	url('../fonts/27D743_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	family: 'Museo-300';
+	src: url('../fonts/27D743_1_0.eot');
+	src: url('../fonts/27D743_1_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/27D743_1_0.woff') format('woff'),
+	url('../fonts/27D743_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	family: 'Museo-500';
+	src: url('../fonts/27D743_2_0.eot');
+	src: url('../fonts/27D743_2_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/27D743_2_0.woff') format('woff'), 
+	url('../fonts/27D743_2_0.ttf') format('truetype');
+}
+
+
+.custom-font {
+	font-family: Museo-300
+}
+
+
