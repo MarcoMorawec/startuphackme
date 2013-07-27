@@ -1,8 +1,15 @@
-<h2>An easy to follow Startup course for people who do amazing things</h2>
-
+<header>
+	<h1>startup hack</h1>
+</header>
+<nav class="menu">
+	<ul>
+		<li><a href="#">Lessons</a></li>
+		<li>/</li>
+		<li><a href="#">Sign in</a></li>
+	</ul>
+</nav>
 <%= bootstrap_flash %>
-<div class="well span3">
-	<p> Sign up</p>
+<section class="span3">
 
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 
