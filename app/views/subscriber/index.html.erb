@@ -4,40 +4,40 @@
 </header>
 
 
-	<section class="offset3 span6 text-center message main-message-box">
-		<h2 class="main-message">Receive top curated information from founders straight to your inbox</h2>
-	</section>
+<section class="offset3 span6 text-center message main-message-box">
+	<h2 class="main-message">Receive top curated information from founders straight to your inbox</h2>
+</section>
 
 <%= bootstrap_flash %>
 
 <section class="offset3 span6 text-center signup sign-up-well ">
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
-		<%= f.error_notification %>
-		<%= f.input :email, label: false, placeholder: 'We never share your email', :html => { :class=>'input-xlarge'}, wrapper_html: { class: 'input-append' }%>
+	<%= f.error_notification %>
+	<%= f.input :email, label: false, placeholder: 'We never share your email', :html => { :class=>'input-xlarge'}, wrapper_html: { class: 'input-append' }%>
 
-		<%= f.button :submit, class: "btn btn-primary custom-button", value: "Sign up"  %>
+	<%= f.button :submit, class: "btn btn-primary custom-button", value: "Sign up"  %>
 	<% end %>	
 
 </section>
 <div class="offset3 span6 text-center">
-		<h1>Founding Team</h1>
+	<h1>Founding Team</h1>
 </div>
 <section class="span12 organizers">
 	<div class="row">
 
-				<div class="span3 text-center">
-					<%= image_tag('marco.jpg') %>
-					<h1>Marco Morawec</h1>
-					<p class="hr">
-					<h2>Web Developer</h2>
-					<%= link_to image_tag('twi_s.png'), "http://www.twitter.com", target: "_blank" %>
-					<%= link_to image_tag('li_s.png'), "http://www.linkedin.com", target: "_blank" %>
-					<%= link_to image_tag('git_s.png'), "http://www.github.com", target: "_blank" %>
-				</div>
-				<div class="span3 text-center">
-					<%= image_tag('sara.jpg') %>
-					<h1>Sara Garver</h1>
-					<p class="hr">
+		<div class="span3 text-center">
+			<%= image_tag('marco.jpg') %>
+			<h1>Marco Morawec</h1>
+			<p class="hr">
+				<h2>Web Developer</h2>
+				<%= link_to image_tag('twi_s.png'), "http://www.twitter.com", target: "_blank" %>
+				<%= link_to image_tag('li_s.png'), "http://www.linkedin.com", target: "_blank" %>
+				<%= link_to image_tag('git_s.png'), "http://www.github.com", target: "_blank" %>
+			</div>
+			<div class="span3 text-center">
+				<%= image_tag('sara.jpg') %>
+				<h1>Sara Garver</h1>
+				<p class="hr">
 					<h2>Business Evangelist</h2>
 					<%= link_to image_tag('twi_s.png'), "http://www.twitter.com", target: "_blank" %>
 					<%= link_to image_tag('li_s.png'), "http://www.linkedin.com", target: "_blank" %>
@@ -47,20 +47,20 @@
 					<%= image_tag('emily.jpg') %>
 					<h1>Emily Mills</h1>
 					<p class="hr">
-					<h2>UX Designer</h2>
-					<%= link_to image_tag('twi_s.png'), "http://www.twitter.com", target: "_blank" %>
-					<%= link_to image_tag('li_s.png'), "http://www.linkedin.com", target: "_blank" %>
-					<%= link_to image_tag('git_s.png'), "http://www.github.com", target: "_blank" %>
-				</div>
-				<div class="span3 text-center">
-					<%= image_tag('isaac.jpg') %>
-					<h1>Isaac Girard</h1>
-					<p class="hr">
-					<h2>Front-end Developer</h2>
-					<%= link_to image_tag('twi_s.png'), "http://www.twitter.com", target: "_blank" %>
-					<%= link_to image_tag('li_s.png'), "http://www.linkedin.com", target: "_blank" %>
-					<%= link_to image_tag('git_s.png'), "http://www.github.com", target: "_blank" %>
-				</div>
-	</div>
-</section>
+						<h2>UX Designer</h2>
+						<%= link_to image_tag('twi_s.png'), "http://www.twitter.com", target: "_blank" %>
+						<%= link_to image_tag('li_s.png'), "http://www.linkedin.com", target: "_blank" %>
+						<%= link_to image_tag('git_s.png'), "http://www.github.com", target: "_blank" %>
+					</div>
+					<div class="span3 text-center">
+						<%= image_tag('isaac.jpg') %>
+						<h1>Isaac Girard</h1>
+						<p class="hr">
+							<h2>Front-end Developer</h2>
+							<%= link_to image_tag('twi_s.png'), "http://www.twitter.com", target: "_blank" %>
+							<%= link_to image_tag('li_s.png'), "http://www.linkedin.com", target: "_blank" %>
+							<%= link_to image_tag('git_s.png'), "http://www.github.com", target: "_blank" %>
+						</div>
+					</div>
+				</section>
 
