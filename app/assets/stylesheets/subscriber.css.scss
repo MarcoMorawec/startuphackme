@@ -5,7 +5,7 @@
 // partial imports
 @import "_type.scss";
 
-// vav elements
+// list layout
 nav, .organizers {
 
 	ul {
@@ -15,4 +15,14 @@ nav, .organizers {
 	li {
 		display: inline;
 	}
+}
+
+//misc layout
+.message {
+	text-align: center;
+}
+
+// form layout
+.form_field {
+	// float: left;
 }
