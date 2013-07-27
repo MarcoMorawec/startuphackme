@@ -1,7 +1,7 @@
 // type-related style rules and licenses
 
 h1 {
-	font-family: 'Museo-700';
+	family: 'Museo-700';
 }
 
 /* @license
@@ -11,16 +11,16 @@ h1 {
  * Agreement(s) entered into by the website owner. All other parties are 
  * explicitly restricted from using the Licensed Webfonts(s).
  * 
- * You may obtain a valid license at the URLs below.
+ * You may obtain a valid license at the urls below.
  * 
  * Webfont: Museo 700 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/700/
+ * url: http://www.myfonts.com/fonts/exljbris/700/
  * 
  * Webfont: Museo 300 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/300/
+ * url: http://www.myfonts.com/fonts/exljbris/300/
  * 
  * Webfont: Museo 500 by exljbris
- * URL: http://www.myfonts.com/fonts/exljbris/museo/500/
+ * url: http://www.myfonts.com/fonts/exljbris/500/
  * 
  * 
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2611011
@@ -30,10 +30,10 @@ h1 {
  * © 2013 MyFonts Inc
 */
   
-@font-face {font-family: 'Museo-700';src: url('../fonts/museo/27D743_0_0.eot');src: url('../fonts/museo/27D743_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/museo/27D743_0_0.woff') format('woff'),url('../fonts/museo/27D743_0_0.ttf') format('truetype');}
+@face {family: 'Museo-700';src: url('../fonts/27D743_0_0.eot');src: url('../fonts/27D743_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/27D743_0_0.woff') format('woff'),url('../fonts/27D743_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-300';src: url('../fonts/museo/27D743_1_0.eot');src: url('../fonts/museo/27D743_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/museo/27D743_1_0.woff') format('woff'),url('../fonts/museo/27D743_1_0.ttf') format('truetype');}
+@face {family: 'Museo-300';src: url('../fonts/27D743_1_0.eot');src: url('../fonts/27D743_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/27D743_1_0.woff') format('woff'),url('../fonts/27D743_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Museo-500';src: url('../fonts/museo/27D743_2_0.eot');src: url('../fonts/museo/27D743_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/museo/27D743_2_0.woff') format('woff'),url('../fonts/museo/27D743_2_0.ttf') format('truetype');}
+@face {family: 'Museo-500';src: url('../fonts/27D743_2_0.eot');src: url('../fonts/27D743_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/27D743_2_0.woff') format('woff'),url('../fonts/27D743_2_0.ttf') format('truetype');}

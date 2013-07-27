@@ -15,3 +15,7 @@ Amazon S3 integration for picture upload
 	
 Hide edit&delete for non-admin users on lesson detail page
 
+
+
+Isaac:
+Fix font assets
