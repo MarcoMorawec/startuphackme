@@ -34,13 +34,18 @@
 <div class="lesson-box">
 	<% @lesson.each do |lesson| %>
 		
-			<h2 class="week-number">
-				<%= lesson.week %>
-			</h2>
-			
-			<h2 class="lesson-headline">
-				<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
-			</h2>
+		<div class="row">
+			<div class="span1">
+				<h2 class="week-number">
+					<%= lesson.week %>
+				</h2>
+			</div>
+			<div class="span4">
+				<h2 class="lesson-headline">
+					<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
+				</h2>
+			</div>
+		</div>
 			
 
 			<% if @admin %>
