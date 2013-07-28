@@ -21,6 +21,8 @@ Amazon S3 integration for picture upload
 
 - create the lesson detail page
 
+- convert lesson week numbers from numeral to written number (ie. 1 to one)
+
 
 
 Isaac:

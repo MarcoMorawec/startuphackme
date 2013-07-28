@@ -38,6 +38,7 @@ body {
 	color: $light-text;
 	font-size: 1.2em;
 	font-weight: lighter;
+	letter-spacing: .18em;
 	padding-bottom: 0;
 	text-shadow: 0 0 0 #000000;
 	text-transform: uppercase;
@@ -115,7 +116,13 @@ body {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
-// footer
+ 
+// Lesson Details Page
+.lesson_summary {
+	h1
+}
+
+// Footer
 footer {
 	color: rgba(236, 237, 238, .5);
 	font-size: 1.1em;
