@@ -35,8 +35,25 @@
 
 .lesson_summary {
 	margin: 90px;
+	padding-left: 30px;
+	width: 420px;
 
 	h1 {
 		margin-bottom: 25px;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	.curator_block {
+		margin: 50px 0 0 40px;
+
+		.team-shots {
+			float: left;
+			height: 160px;
+			margin-right: 45px;
+			width: 160px;
+		}
 	}
 }

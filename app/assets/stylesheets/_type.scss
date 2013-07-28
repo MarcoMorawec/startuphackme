@@ -123,6 +123,13 @@ body {
 
  
 // Lesson Details Page
+.lesson_block p, .lesson_summary p {
+	font-family: $body-font;
+	font-size: 1.3em;
+	font-weight: lighter;
+	letter-spacing: .1em;
+}
+
 .lesson_block {
 	
 	h1 {
@@ -137,11 +144,7 @@ body {
 		font-weight: lighter;
 	}
 
-	p {
-		font-family: $body-font;
-		font-size: 1.2em;
-		font-weight: lighter;
-	}
+
 }
 
 .lesson_summary {
@@ -158,6 +161,14 @@ body {
 		font-family: 'Museo-300';
 		font-size: 4em;
 		font-weight: lighter;
+	}
+
+	.curator_block h1 {
+		color: $name-color;
+		font-family: 'Museo-300', sans-serif;
+		font-size: 2em;
+		font-weight: lighter;
+		text-transform: none;
 	}
 }
 
