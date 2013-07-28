@@ -3,6 +3,8 @@
 // Variables
 	// Colors
 	$bold-color: rgba(104, 192, 61, 1.0000); //green
+	$light-text: rgba(236, 237, 238, 1.0000); //off-white
+
 
 // common elements
 a {
@@ -19,7 +21,7 @@ html {
 
 body {
     font-size: 62.5%; /* 1em = 10px */
-	color: rgba(236, 237, 238, 1.0000);
+	color: $light-text;
 }
 
 
@@ -29,7 +31,10 @@ body {
 	font-weight: normal;
 }
 
-.nav {
+.navbar .nav li a { // this is incredibly specific in order to override the ridiculous bootstrap selector
+	color: $light-text;
+	font-size: 1.2em;
+	text-shadow: 0 0 0 #000000;
 	text-transform: uppercase;
 }
 
