@@ -8,7 +8,7 @@
 <section class="offset3 span6 text-center signup sign-up-well ">
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 	<%= f.error_notification %>
-	<%= f.input :email, label: false, placeholder: 'We never share your email', :html => { :class=>'input-xlarge'}, wrapper_html: { class: 'input-append' }%>
+	<%= f.input :email, label: false, placeholder: 'We never share.', :html => { :class=>'input-xlarge'}, wrapper_html: { class: 'input-append' }%>
 
 	<%= f.button :submit, class: "btn btn-primary custom-button", value: "Sign up"  %>
 	<% end %>	

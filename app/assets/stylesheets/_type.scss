@@ -47,6 +47,15 @@ body {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
+
+// Subscriber Specific
+.string.email.required, .button.btn.custom-button {
+	font-family: 'Museo-300';
+	font-size: 3em;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+
 // Font-face BS
 @font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-300';src: font-url('27D743_1_0.eot');src: font-url('27D743_1_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_1_0.woff') format('woff'),font-url('27D743_1_0.ttf') format('truetype');}

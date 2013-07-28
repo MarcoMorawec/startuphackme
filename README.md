@@ -28,3 +28,6 @@ Fix font assets - done
 Figure out how to apply gradient over background image - done
 Override nav button text-shadow - done
 Disabled link hovers (logo and nav text specifically)
+Fix signup email field font size (font-size not working?)
+Make "Sing up" button green
+Center all elements (bootstrap is fucking wacky shit!)
