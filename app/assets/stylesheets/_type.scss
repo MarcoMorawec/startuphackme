@@ -8,6 +8,9 @@
 
 	$light-text: rgba(236, 237, 238, 1.0000); //off-white
 
+// Font Variables
+$subhead-font: 'Helvetica', sans-serif;
+$body-font: 'Helvetica', sans-serif;
 
 // common elements
 a {
@@ -118,7 +121,42 @@ body {
 
  
 // Lesson Details Page
+.lesson_block {
+	
+	h1 {
+		font-family: 'Museo-700';
+		font-size: 7em;
+		font-weight: lighter;
+	}
+
+	h2 {
+		font-family: $subhead-font;
+		font-size: 3em;
+		font-weight: lighter;
+	}
+
+	p {
+		font-family: $body-font;
+		font-size: 1.2em;
+		font-weight: lighter;
+	}
+}
+
 .lesson_summary {
+
+	h1 {
+		font-family: $subhead-font;
+		font-size: 1.3em;
+		font-weight: lighter;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-family: 'Museo-300';
+		font-size: 4em;
+		font-weight: lighter;
+	}
 }
 
 // Footer

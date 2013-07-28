@@ -35,3 +35,4 @@ Make "Sign up" button green
 Center all elements (bootstrap is fucking wacky shit!)
 Fix box-shadows under team photos
 Fix Emily team photo border issue
+Fix vertical hr's on lesson detail page
