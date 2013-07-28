@@ -4,8 +4,13 @@ before_filter :authenticate_user!, :except => [:index]
 
 	def index
 		@admin = if user_signed_in? then current_user.admin else nil end
+		
+
+
 		#sort descending by week number
 		@lesson = Lesson.order("week ASC")
+
+		@week = @lesson.last
 	end
 
 	def show
