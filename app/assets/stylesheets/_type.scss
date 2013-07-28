@@ -3,6 +3,7 @@
 // Variables
 	// Colors
 	$bold-color: rgba(104, 192, 61, 1.0000); //green
+	$orange-color: rgba(100, 150, 34, 1.0000); //orange
 
 // common elements
 a {
@@ -37,6 +38,34 @@ body {
 	line-height: 1.1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
+
+.team-header {
+	color: $bold-color;
+	font-family: 'Museo-300';
+	font-size: 3em;
+	font-weight: lighter;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.team-name {
+	color: $orange-color;
+	font-family: 'Museo-300';
+	font-size: 2em;
+	font-weight: lighter;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.team-job {
+	color: rgba(236, 237, 238, 1.0000);
+	font-family: 'Museo-300';
+	font-size: 2em;
+	font-weight: lighter;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
 
 // Font-face BS
 @font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}

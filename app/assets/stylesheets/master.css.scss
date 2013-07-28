@@ -5,22 +5,43 @@
 }
 
 .main-message-box {
+	margin-top: 80px;
 	margin-bottom: 50px;
 }
 
-.main-message {
-	margin-top: 80px;
+.box-top {
+	margin-top: 40px;
+}
+
+.box-bottom {
+	margin-bottom: 40px;
 }
 
 .my-size {
 	width: 300px;
 }
 
-.sign-up-well {
+.sign-up {
 	border: 1px none black;
 	background: url('bg.png') repeat scroll 0 0 transparent; 
 	margin-bottom: 50px;
 	vertical-align: middle;
+}
+
+
+.input-large.signup {
+  width: 250px;
+  height: 44px !important;
+  margin-bottom: 10px !important;
+  line-height: 30px !important;
+  padding: 11px 19px !important;
+  font-size: 17.5px !important;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+.btn-large.signup {
+	font-size: 34px;
 }
 
 // hr styling including hacked together drop shadow
@@ -57,7 +78,10 @@ hr {
 
 .team-background {
 	background: url('bg.png') repeat scroll 0 0 transparent; 
+}
 
+.team-shots {
+	 border-radius: 100% 100% 100% 100%;
 }
 
 
