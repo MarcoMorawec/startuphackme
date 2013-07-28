@@ -4,7 +4,7 @@
 	// Colors
 	$bold-color: rgba(104, 192, 61, 1.0000); //green
 
-	$orange-color: rgba(100, 150, 34, 1.0000); //orange
+	$name-color: rgba(232, 117, 41, 1.0000); //orange
 
 	$light-text: rgba(236, 237, 238, 1.0000); //off-white
 
@@ -37,10 +37,12 @@ body {
 .navbar .nav li a { // this is incredibly specific in order to override the ridiculous bootstrap selector
 	color: $light-text;
 	font-size: 1.2em;
+	font-weight: lighter;
+	padding-bottom: 0;
 	text-shadow: 0 0 0 #000000;
 	text-transform: uppercase;
 }
-
+// Subscriber Specific
 .main-message {
 	color: $bold-color;
 	font-family: 'Museo-300';
@@ -50,20 +52,27 @@ body {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
+.string.email.required, .button.btn.custom-button {
+	font-family: 'Museo-300';
+	font-size: 3em;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
 
 .team-header {
 	color: $bold-color;
 	font-family: 'Museo-300';
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: lighter;
 	line-height: 1.1;
+	margin: 30px 0 50px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .team-name {
-	color: $orange-color;
+	color: $name-color;
 	font-family: 'Museo-300';
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: lighter;
 	line-height: 1.1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -71,10 +80,11 @@ body {
 
 .team-job {
 	color: rgba(236, 237, 238, 1.0000);
-	font-family: 'Museo-300';
-	font-size: 2em;
+	font-family: inherit;
+	font-size: 1em;
 	font-weight: lighter;
 	line-height: 1.1;
+	text-transform: uppercase;
 }
 
 .week-number {
@@ -104,12 +114,6 @@ body {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
-// Subscriber Specific
-.string.email.required, .button.btn.custom-button {
-	font-family: 'Museo-300';
-	font-size: 3em;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-}
 
 
 // Font-face BS
