@@ -8,6 +8,16 @@
 	margin-top: 50px;
 }
 
+.no-style-link:hover {
+	text-decoration: none;
+	color: rgba(104, 192, 61, 1.0000);
+}
+
+.no-style-link-lesson:hover {
+	text-decoration: none;
+	color: black;
+}
+
 // hr styling including hacked together drop shadow
 hr {
 	border: 0;

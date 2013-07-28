@@ -46,7 +46,7 @@
 			<div class="span4">
 				<h2 class="lesson-headline">
 					<% if lesson.week <= 1 %>
-						<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
+						<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
 					<% else %>
 						<section class="inactive-link">
 							<%= lesson.weekly_tagline %>
