@@ -8,21 +8,24 @@
 	<!-- Modal -->
 	<% if user_signed_in? && (current_user.created_at + 5.seconds) > Time.now %>
 		<div id="lesson-social" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-		    <div class="modal-header">
+		    <div class="modal-header text-center">
 			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			    <h3 id="myModalLabel">Share the Love</h3>
+			    <h3 id="myModalLabel" class="header-modal-message">Share the Love</h3>
 		    </div>
-		    <div class="modal-body">
-			    <p>Know other awesome people who want to be part of a startup</p>
+		    <div class="modal-body text-center">
+			    <h2 class="main-modal-message">Know other awesome people who need to put rocket-fuel into their startup?</h2>
 				</br>
 				</br>
-				<div class="">
-			    	<%= twitter_button :title => 'StartUp Hack', :url=> 'http://startuphack.me' %>
+				<div class="text-center">
+		    		<a href="https://twitter.com/intent/tweet?button_hashtag=StartupHack&text=Receive%20top%20curated%20information%20from%20founders%20straight%20to%20your inbox%20-%20via%20@StartupHackers" class="twitter-hashtag-button" data-lang="en" data-related="StartupHackers" data-size="large">Tweet #StartupHack</a>
+
+			    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			    	</script>	
 			    </div>
 		    </div>
 		</div>
 	<% end %>
-
+		    	
 
 	<% if @admin %>
 		<%= link_to('Create New Lesson', {:action => 'new' }, :class => 'btn btn-success') %>
@@ -87,7 +90,7 @@
 			<div class="span4">
 				<h2 class="lesson-headline">
 					<section class="inactive-link">
-						How to make money
+						How build a great team
 					</section>
 				</h2>
 			</div>
@@ -103,7 +106,7 @@
 			<div class="span4">
 				<h2 class="lesson-headline">
 					<section class="inactive-link">
-						How to make money
+						How to get into Techstars
 					</section>
 				</h2>
 			</div>
@@ -119,7 +122,7 @@
 			<div class="span4">
 				<h2 class="lesson-headline">
 					<section class="inactive-link">
-						How to make money
+						How to raise a seed round
 					</section>
 				</h2>
 			</div>
