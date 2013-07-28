@@ -1,27 +1,18 @@
 /* Design with Love and never ending passion by Isaac, Emily, Marco and Sara */
 
+// partial imports
+@import "_type.scss";
+
+// layout and positioning
 .logo {
 	margin-top: 60px;
 }
 
-.main-message-box {
-	margin-bottom: 50px;
-}
-
-.main-message {
-	margin-top: 80px;
-}
 
 .my-size {
 	width: 300px;
 }
 
-.sign-up-well {
-	border: 1px none black;
-	background: url('bg.png') repeat scroll 0 0 transparent; 
-	margin-bottom: 50px;
-	vertical-align: middle;
-}
 
 // hr styling including hacked together drop shadow
 hr {
@@ -46,7 +37,7 @@ hr {
 }
 
 
-// what is this styling? :)
+// what is this styling, Marco? :)
 // .hr {
 //     background-color: transparent;
 //     border: 1px solid #333333;
@@ -57,38 +48,6 @@ hr {
 
 .team-background {
 	background: url('bg.png') repeat scroll 0 0 transparent; 
-
-}
-
-
-@font-face {
-	family: Museo-700;
-	src: url('./fonts/27D743_0_0.eot');
-	src: url('./fonts/27D743_0_0.eot?#iefix') 
-	format('embedded-opentype'),
-	url('../fonts/27D743_0_0.woff') format('woff'),
-	url('../fonts/27D743_0_0.ttf') format('truetype');
-}
-
-@font-face {
-	family: 'Museo-300';
-	src: url('../fonts/27D743_1_0.eot');
-	src: url('../fonts/27D743_1_0.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/27D743_1_0.woff') format('woff'),
-	url('../fonts/27D743_1_0.ttf') format('truetype');
-}
-
-@font-face {
-	family: 'Museo-500';
-	src: url('../fonts/27D743_2_0.eot');
-	src: url('../fonts/27D743_2_0.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/27D743_2_0.woff') format('woff'), 
-	url('../fonts/27D743_2_0.ttf') format('truetype');
-}
-
-
-.custom-font {
-	font-family: Museo-300
 }
 
 
