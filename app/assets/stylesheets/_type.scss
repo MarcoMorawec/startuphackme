@@ -77,6 +77,24 @@ body {
 	line-height: 1.1;
 }
 
+.week-number {
+	color: $bold-color;
+	font-family: 'Museo-300';
+	font-size: 7em;
+	font-weight: bold;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.lesson-headline {
+	color: rgba(236, 237, 238, 1.0000);
+	font-family: 'Museo-300';
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
 
 // Subscriber Specific
 .string.email.required, .button.btn.custom-button {
