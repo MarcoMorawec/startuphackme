@@ -119,6 +119,8 @@ body {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
+
+
  
 // Lesson Details Page
 .lesson_block {
@@ -170,3 +172,13 @@ footer {
 @font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-300';src: font-url('27D743_1_0.eot');src: font-url('27D743_1_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_1_0.woff') format('woff'),font-url('27D743_1_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-500';src: font-url('27D743_2_0.eot');src: font-url('27D743_2_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_2_0.woff') format('woff'),font-url('27D743_2_0.ttf') format('truetype');}
+
+//
+.lesson-headline {
+	color: rgba(236, 237, 238, 1.0000);
+	font-family: 'Museo-300';
+	font-size: 3.5em;
+	font-weight: bold;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
