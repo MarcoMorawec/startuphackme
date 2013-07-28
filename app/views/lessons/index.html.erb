@@ -23,14 +23,16 @@
 		</div>
 	<% end %>
 
-<h2 class="custom-font">Lesson overview goes here</h2>
 
 	<% if @admin %>
 		<%= link_to('Create New Lesson', {:action => 'new' }, :class => 'btn btn-success') %>
 	<% end %>
 
+	<h2 class="team-header">Month</h2>
+
+
 	<% @lesson.each do |lesson| %>
-		<h4>Week: <%= lesson.week %>
+		<h4><%= lesson.week %>
 			<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
 		</h4>
 
