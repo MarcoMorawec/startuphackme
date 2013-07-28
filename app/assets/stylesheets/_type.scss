@@ -1,7 +1,8 @@
 /* type-related style rules and licenses */
 
-// color variables
-$bold-color: rgba(104, 192, 61, 1.0000); //green
+// Variables
+	// Colors
+	$bold-color: rgba(104, 192, 61, 1.0000); //green
 
 // common elements
 a {
@@ -10,7 +11,7 @@ a {
 }
 
 
-// type styling
+// base type settings
 html {
 	font-size: 16px;
 	font-style: Arial, sans-serif;
@@ -21,46 +22,23 @@ body {
 	color: rgba(236, 237, 238, 1.0000);
 }
 
-.main-message{
-	color: $bold-color
+
+.brand {
+	font-family: 'Museo-500', sans-serif;
+	font-size: .8em;
+	font-weight: normal;
 }
 
-h1 {
-	family: 'Museo-700';
+.main-message {
+	color: $bold-color;
+	font-family: 'Museo-300';
+	font-size: 5em;
+	font-weight: lighter;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
-@face {family: 'Museo-700';src:font-url('../fonts/27D743_0_0.eot');src:font-url('../fonts/27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('../fonts/27D743_0_0.woff') format('woff'),font-url('../fonts/27D743_0_0.ttf') format('truetype');}
- 
-  
-@face {family: 'Museo-300';src:font-url('../fonts/27D743_1_0.eot');src:font-url('../fonts/27D743_1_0.eot?#iefix') format('embedded-opentype'),font-url('../fonts/27D743_1_0.woff') format('woff'),font-url('../fonts/27D743_1_0.ttf') format('truetype');}
- 
-  
-@face {family: 'Museo-500';src:font-url('../fonts/27D743_2_0.eot');src:font-url('../fonts/27D743_2_0.eot?#iefix') format('embedded-opentype'),font-url('../fonts/27D743_2_0.woff') format('woff'),font-url('../fonts/27D743_2_0.ttf') format('truetype');}
-
-
-/* @license
- * MyFonts Webfont Build ID 2611011, 2013-07-27T11:50:15-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the urls below.
- * 
- * Webfont: Museo 700 by exljbris
- * url: http://www.myfonts.com/fonts/exljbris/700/
- * 
- * Webfont: Museo 300 by exljbris
- * url: http://www.myfonts.com/fonts/exljbris/300/
- * 
- * Webfont: Museo 500 by exljbris
- * url: http://www.myfonts.com/fonts/exljbris/500/
- * 
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2611011
- * Licensed pageviews: Unlimited
- * Webfonts copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
- * 
- * © 2013 MyFonts Inc
-*/
-  
+// Font-face BS
+@font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-300';src: font-url('27D743_1_0.eot');src: font-url('27D743_1_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_1_0.woff') format('woff'),font-url('27D743_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-500';src: font-url('27D743_2_0.eot');src: font-url('27D743_2_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_2_0.woff') format('woff'),font-url('27D743_2_0.ttf') format('truetype');}

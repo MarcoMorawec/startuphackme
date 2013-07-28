@@ -40,8 +40,4 @@
  /* Universal Header Styles */
  header {
  	height: 100px;
-
- 	hr {
- 		.2em;
- 	}
  }
