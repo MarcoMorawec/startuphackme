@@ -1,11 +1,15 @@
 /* Design with Love and never ending passion by Isaac, Emily, Marco and Sara */
 
+.logo {
+	margin-top: 60px;
+}
+
 .main-message-box {
 	margin-bottom: 50px;
 }
 
 .main-message {
-	font-size: 45px;
+	margin-top: 80px;
 }
 
 .my-size {
@@ -19,13 +23,37 @@
 	vertical-align: middle;
 }
 
-.hr {
-    background-color: transparent;
-    border: 1px solid #333333;
-    height: 0;
-    margin: 25px 0;
-    width: 100%;
+// hr styling including hacked together drop shadow
+hr {
+	border: 0;
+    height: 1px;
+    background: #0d152a;
+    background-image: -webkit-linear-gradient(left, #23263c, #0d152a, #23263c); 
+    background-image:    -moz-linear-gradient(left, #23263c, #0d152a, #23263c); 
+    background-image:     -ms-linear-gradient(left, #23263c, #0d152a, #23263c); 
+    background-image:      -o-linear-gradient(left, #23263c, #0d152a, #23263c);
 }
+
+.hr_shadow {
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #202227, #175a87, #202227); 
+    background-image:    -moz-linear-gradient(left, #202227, #175a87, #202227); 
+    background-image:     -ms-linear-gradient(left, #202227, #175a87, #202227); 
+    background-image:      -o-linear-gradient(left, #202227, #175a87, #202227);
+    margin: -20px 0 0 0;
+}
+
+
+// what is this styling? :)
+// .hr {
+//     background-color: transparent;
+//     border: 1px solid #333333;
+//     height: 0;
+//     margin: 25px 0;
+//     width: 100%;
+// }
 
 .team-background {
 	background: url('bg.png') repeat scroll 0 0 transparent; 

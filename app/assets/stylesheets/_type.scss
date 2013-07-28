@@ -1,7 +1,28 @@
-// type-related style rules and licenses
+/* type-related style rules and licenses */
+
+// color variables
+$bold-color: rgba(104, 192, 61, 1.0000); //green
+
+// common elements
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+// type styling
+html {
+	font-size: 16px;
+	font-style: Arial, sans-serif;
+}
 
 body {
+    font-size: 62.5%; /* 1em = 10px */
 	color: rgba(236, 237, 238, 1.0000);
+}
+
+.main-message{
+	color: $bold-color
 }
 
 h1 {
