@@ -29,7 +29,7 @@
 	<% end %>
 
 <div class="offset3 span6 text-center box-top">
-	<h2 class="lesson-headline">Month</h2>
+	<h2 class="lesson-main-headline">MONTH ONE</h2>
 
 <div class="lesson-box">
 	<% @lesson.each do |lesson| %>
@@ -42,16 +42,22 @@
 			</div>
 			<div class="span4">
 				<h2 class="lesson-headline">
-					<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
+					<% if lesson.week <= 1 %>
+						<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}) %>
+					<% else %>
+						<section class="inactive-link">
+							<%= lesson.weekly_tagline %>
+						</section>
+					<% end %>
 				</h2>
 			</div>
 		</div>
-			
-
-			<% if @admin %>
-					<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
-					<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
-			<% end %>
+			<hr>
+			<hr class="hr_shadow">	
+		<% if @admin %>
+				<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
+				<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
+		<% end %>
 	<% end %>
 </div>
 </div>
