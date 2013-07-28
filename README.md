@@ -25,3 +25,7 @@ Amazon S3 integration for picture upload
 
 Isaac:
 Fix font assets
+Figure out how to apply gradient over background image
+- tried to create semi-transparent png - did't work
+- tried using "mask-image" property - didn't work
+- played with psuedo elements - didn't work
