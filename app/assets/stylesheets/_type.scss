@@ -3,7 +3,11 @@
 // Variables
 	// Colors
 	$bold-color: rgba(104, 192, 61, 1.0000); //green
+
 	$orange-color: rgba(100, 150, 34, 1.0000); //orange
+
+	$light-text: rgba(236, 237, 238, 1.0000); //off-white
+
 
 // common elements
 a {
@@ -20,7 +24,7 @@ html {
 
 body {
     font-size: 62.5%; /* 1em = 10px */
-	color: rgba(236, 237, 238, 1.0000);
+	color: $light-text;
 }
 
 
@@ -28,6 +32,13 @@ body {
 	font-family: 'Museo-500', sans-serif;
 	font-size: .8em;
 	font-weight: normal;
+}
+
+.navbar .nav li a { // this is incredibly specific in order to override the ridiculous bootstrap selector
+	color: $light-text;
+	font-size: 1.2em;
+	text-shadow: 0 0 0 #000000;
+	text-transform: uppercase;
 }
 
 .main-message {
@@ -38,6 +49,7 @@ body {
 	line-height: 1.1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
+
 
 .team-header {
 	color: $bold-color;
@@ -63,6 +75,12 @@ body {
 	font-size: 2em;
 	font-weight: lighter;
 	line-height: 1.1;
+
+
+// Subscriber Specific
+.string.email.required, .button.btn.custom-button {
+	font-family: 'Museo-300';
+	font-size: 3em;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 

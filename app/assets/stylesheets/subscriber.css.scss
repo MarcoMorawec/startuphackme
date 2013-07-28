@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// partial imports
-@import "_type.scss";
 
 // list layout
 nav, .organizers {
@@ -18,11 +16,47 @@ nav, .organizers {
 }
 
 //misc layout
-.message {
-	text-align: center;
+.main-message-box {
+	margin-bottom: 50px;
+}
+
+.main-message {
+	margin-left: -20px;
+	margin-top: 80px;
+	max-width: 650px;
 }
 
 // form layout
-.form_field {
-	// float: left;
+.sign-up-well {
+	background: rgba(0,0,0,.35);
+	border: 1px none black;
+	box-shadow: 0 1px 1px rgba(255,255,255,0.2);
+	height: 95px;
+	margin-bottom: 50px;
+	// margin-left: +40px;
+	vertical-align: middle;
+	width: 534px;
+}
+
+.form-horizontal {
+	margin-top: 19px;
+}
+
+.string.email.required {
+	border: none;
+	border-radius: 0;
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+	height: 55px;
+	margin-right: 4px;
+	padding: 0;
+	text-align: center;
+	width: 330px;
+}
+
+.button.btn.custom-button {
+	border-radius: 0;
+	height: 56px;
+	padding: 0;
+	text-align: center;
+	width: 160px;
 }

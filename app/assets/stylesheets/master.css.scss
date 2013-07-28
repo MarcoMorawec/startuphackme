@@ -1,8 +1,13 @@
 /* Design with Love and never ending passion by Isaac, Emily, Marco and Sara */
 
+// partial imports
+@import "_type.scss";
+
+// layout and positioning
 .logo {
 	margin-top: 60px;
 }
+
 
 .main-message-box {
 	margin-top: 80px;
@@ -17,9 +22,11 @@
 	margin-bottom: 40px;
 }
 
+
 .my-size {
 	width: 300px;
 }
+
 
 .sign-up {
 	border: 1px none black;
@@ -27,6 +34,7 @@
 	margin-bottom: 50px;
 	vertical-align: middle;
 }
+
 
 
 .input-large.signup {
@@ -67,7 +75,7 @@ hr {
 }
 
 
-// what is this styling? :)
+// what is this styling, Marco? :)
 // .hr {
 //     background-color: transparent;
 //     border: 1px solid #333333;
@@ -113,6 +121,7 @@ hr {
 
 .custom-font {
 	font-family: Museo-300
+
 }
 
 

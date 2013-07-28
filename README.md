@@ -24,8 +24,10 @@ Amazon S3 integration for picture upload
 
 
 Isaac:
-Fix font assets
-Figure out how to apply gradient over background image
-- tried to create semi-transparent png - did't work
-- tried using "mask-image" property - didn't work
-- played with psuedo elements - didn't work
+Fix font assets - done
+Figure out how to apply gradient over background image - done
+Override nav button text-shadow - done
+Disabled link hovers (logo and nav text specifically)
+Fix signup email field font size (font-size not working?)
+Make "Sing up" button green
+Center all elements (bootstrap is fucking wacky shit!)
