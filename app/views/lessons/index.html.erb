@@ -35,8 +35,8 @@
 
 <div class="offset3 span6 text-center box-top">
 	<% @lesson.each_slice(4) do |show| %>
-
-		<h2 class="lesson-main-headline">MONTH <%= 1.upto(12) { |i| print i.to_s} %>
+			
+		<h2 class="lesson-main-headline">MONTH <%= show.first.month %>
 
 		</h2>
 		
