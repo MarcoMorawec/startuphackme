@@ -4,7 +4,7 @@ A simple App to get great feedback from successful founders
 __To DO__
 
 Marco:
-Integrate Twitter button on modal - done! (edit: "Tweet to #startuphack")
+Integrate Twitter button on modal with Twitter API - done!
 Fix lesson detail page so all lessons show up -> done
 Amazon S3 integration for picture upload 
 	- add image field to db
@@ -16,10 +16,14 @@ Amazon S3 integration for picture upload
 - create the landing page - done
 - create the lesson overview page - done
 - create the lesson detail page - done
+- add month to the lesson DB table - done
+- add the month input field to the lesson edit and new views - done
+- sort the lessons by month first and then by week - done
 
 - make the domain work!
-- add month to the lesson DB table
-- add the month input field to the lesson edit and new views
+- make the loop cycle through the months and lessons properly - almost! (fix month number display)
+- make lesson link being active based on time from sign-up
+- Make the CMS easier to user (place form fields where they will shop up on the page)
 - 
 
 
