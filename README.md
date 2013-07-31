@@ -12,16 +12,15 @@ Amazon S3 integration for picture upload
 	- adjut the views and edit/new actions
 	- setup a S3 bucket -done
 	- add the user credentials - done
-	
 - Hide edit&delete for non-admin users on lesson detail page - done
+- create the landing page - done
+- create the lesson overview page - done
+- create the lesson detail page - done
 
-- create the landing page
-
-- create the lesson overview page
-
-- create the lesson detail page
-
-- convert lesson week numbers from numeral to written number (ie. 1 to one)
+- make the domain work!
+- add month to the lesson DB table
+- add the month input field to the lesson edit and new views
+- 
 
 
 

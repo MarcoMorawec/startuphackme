@@ -1,3 +1,5 @@
+<div class="span5 offset2">
+
   <h1>Create a new Lesson</h1>
 
 <%= simple_form_for @lesson, :url => {:action => 'update', :id => @lesson.id}, :method => 'put', :html => {:class => 'form-horizontal', :multipart => true } do |f| %>
@@ -6,3 +8,5 @@
 
   <%= f.button :submit, class: "btn btn-primary", value: "Update Lesson" %>
 <% end %>
+
+</div>

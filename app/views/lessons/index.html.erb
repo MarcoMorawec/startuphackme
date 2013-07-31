@@ -31,108 +31,45 @@
 		<%= link_to('Create New Lesson', {:action => 'new' }, :class => 'btn btn-success') %>
 	<% end %>
 
-<div class="offset3 span6 text-center box-top">
-	<h2 class="lesson-main-headline">MONTH ONE</h2>
 
-<div class="lesson-box">
-	<% @lesson.each do |lesson| %>
+
+<div class="offset3 span6 text-center box-top">
+	<% @lesson.each_slice(4) do |show| %>
+
+		<h2 class="lesson-main-headline">MONTH <%= 1.upto(12) { |i| print i.to_s} %>
+
+		</h2>
 		
-		<div class="row">
-			<div class="span1">
-				<h2 class="week-number">
-					<%= lesson.week %>
-				</h2>
-			</div>
-			<div class="span4">
-				<h2 class="lesson-headline">
-					<% if lesson.week <= 1 %>
-						<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
-					<% else %>
-						<section class="inactive-link">
-							<%= lesson.weekly_tagline %>
-						</section>
-					<% end %>
-				</h2>
-			</div>
-		</div>
-			<hr>
-			<hr class="hr_shadow">	
-		<% if @admin %>
-				<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
-				<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
-		<% end %>
+		<div class="lesson-box">
+			<% show.each do |lesson| %>
+				<div class="row">
+					<div class="span1">
+						<h2 class="week-number">
+							<%= lesson.week %>
+						</h2>
+					</div>
+					<div class="span4">
+						<h2 class="lesson-headline">
+							<% # logic to show each lesson in 7 day increments %>
+							<% if lesson.week <= 1 %>
+								<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
+							<% else %>
+								<section class="inactive-link">
+									<%= lesson.weekly_tagline %>
+								</section>
+							<% end %>
+						</h2>
+					</div>
+				</div>
+					<hr>
+					<hr class="hr_shadow">	
+				<% if @admin %>
+						<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
+						<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
+				<% end %>
+			<% end %>
 	<% end %>
 </div>
-
-	<h2 class="lesson-main-headline">MONTH TWO</h2>
-		<div class="row">
-			<div class="span1">
-				<h2 class="week-number">
-						1
-				</h2>
-			</div>
-			<div class="span4">
-				<h2 class="lesson-headline">
-					<section class="inactive-link">
-						Building an amazing team
-					</section>
-				</h2>
-			</div>
-		</div>
-			<hr>
-			<hr class="hr_shadow">		
-		<div class="row">
-			<div class="span1">
-				<h2 class="week-number">
-						2
-				</h2>
-			</div>
-			<div class="span4">
-				<h2 class="lesson-headline">
-					<section class="inactive-link">
-						Focus: Building a core Product
-					</section>
-				</h2>
-			</div>
-		</div>
-			<hr>
-			<hr class="hr_shadow">
-		<div class="row">
-			<div class="span1">
-				<h2 class="week-number">
-						3
-				</h2>
-			</div>
-			<div class="span4">
-				<h2 class="lesson-headline">
-					<section class="inactive-link">
-						How to get into Techstars
-					</section>
-				</h2>
-			</div>
-		</div>
-			<hr>
-			<hr class="hr_shadow">
-		<div class="row">
-			<div class="span1">
-				<h2 class="week-number">
-						4
-				</h2>
-			</div>
-			<div class="span4">
-				<h2 class="lesson-headline">
-					<section class="inactive-link">
-						Raising a seed round
-					</section>
-				</h2>
-			</div>
-		</div>
-			<hr>
-			<hr class="hr_shadow">
-
-
-	
-
 
 </div>
 
