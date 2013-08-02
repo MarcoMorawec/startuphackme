@@ -2,8 +2,8 @@
 <section class="span10 offset1 text-center main-message-box">
 	<h2 class="main-message">An easy to follow Startup course for people who want to build amazing products</h2>
 </section>
-
-<section class="offset3 span6 text-center signup sign-up-well ">
+<div class="span3"></div>
+<section class="span6 text-center signup sign-up-well ">
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 	<%= f.error_notification %>
 	<%= f.input :email, label: false, placeholder: 'We never share.', :html => { :class=>'input-xlarge'}, wrapper_html: { class: 'input-append' }%>
@@ -11,6 +11,7 @@
 	<%= f.button :submit, class: "btn btn-primary btn-large custom-button", value: "Sign up"  %>
 	<% end %>
 </section>
+<div class="span3"></div>
 
 <section class="offset3 span6 text-center">
 	<h2 class="secondary-message">Receive a weekly roadmap to launching a successful product straight to your inbox. Curated by Startup Founders who ship amazing products</h2>
