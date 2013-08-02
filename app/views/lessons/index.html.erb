@@ -13,7 +13,7 @@
 			    <h3 id="myModalLabel" class="header-modal-message">Share the Love</h3>
 		    </div>
 		    <div class="modal-body text-center">
-			    <h2 class="main-modal-message">Know other awesome people who need to put rocket-fuel into their startup?</h2>
+			    <h2 class="main-modal-message">Know other awesome people who are excited about startups?</h2>
 				</br>
 				</br>
 				<div class="text-center">
@@ -33,27 +33,30 @@
 		</div>
 	<% end %>
 
+	<% # logic to show each lesson in 7 day increments - weeks since sign-up date = number of links shown %>  							
+  			
+		<%= @full_weeks_since_signup.floor %>
 
 
 <div class="offset3 span6 text-center box-top">
-	<% @lesson.each_slice(4) do |show| %>
+	<% @lesson.each_slice(4).with_index do |show, index| %>
 			
 		<h2 class="lesson-main-headline">MONTH <%= show.first.month %>
 
 		</h2>
-		
 		<div class="lesson-box">
-			<% show.each do |lesson| %>
+			<% show.each_with_index do |lesson, index| %>
 				<div class="row">
 					<div class="span1">
 						<h2 class="week-number">
 							<%= lesson.week %>
+							<%= index %>
 						</h2>
 					</div>
 					<div class="span8">
 						<h2 class="lesson-headline">
-							<% # logic to show each lesson in 7 day increments - weeks since sign-up date = number of links shown %>
-							<% if lesson.week <= 1 %>
+
+							<% if @full_weeks_since_signup  >= index %>
 								<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
 							<% else %>
 								<section class="inactive-link">

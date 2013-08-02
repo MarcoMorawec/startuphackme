@@ -10,6 +10,11 @@ before_filter :authenticate_user!, :except => [:index]
 		@month = @lesson
 
 		@week = @lesson.last
+
+		#creating the weeks_since_signup variable
+		@sign_up = current_user.created_at
+		@full_weeks_since_signup = ((Time.now - @sign_up) / 60 / 60 / 24 / 7)
+
 	end
 
 	def show
