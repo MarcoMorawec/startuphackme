@@ -21,7 +21,7 @@ Amazon S3 integration for picture upload
 - sort the lessons by month first and then by week - done
 - make the loop cycle through the months and lessons properly - done
 
-- make the domain work!
+- make the domain work - F*ing finally!
 - make lesson link being active based on time from sign-up
 - Make the CMS easier to user (place form fields where they will shop up on the page)
 - 
