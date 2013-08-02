@@ -35,7 +35,7 @@
 }
 
 // hr styling including hacked together drop shadow
-hr {
+.hr_main {
 	border: 0;
     background: #0d152a;
     background-image: -webkit-linear-gradient(left, #23263c, #0d152a, #23263c); 
@@ -55,6 +55,14 @@ hr {
     background-image:      -o-linear-gradient(left, #202227, #175a87, #202227);
     height: 1px;
     margin: 0 0 0 0;
+}
+
+.hr_mini {
+
+}
+
+hr {
+    width: 100%;
 }
 
 
