@@ -15,6 +15,9 @@ before_filter :authenticate_user!, :except => [:index]
 		@sign_up = current_user.created_at
 		@full_weeks_since_signup = ((Time.now - @sign_up) / 60 / 60 / 24 / 7)
 
+		#creating the loop counter inside the each_slice loop
+		@loop_counter = 0
+
 	end
 
 	def show

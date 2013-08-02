@@ -37,15 +37,16 @@
   			
 		<%= @full_weeks_since_signup.floor %>
 
-
 <div class="offset3 span6 text-center box-top">
 	<% @lesson.each_slice(4).with_index do |show, index| %>
 			
 		<h2 class="lesson-main-headline">MONTH <%= show.first.month %>
 
 		</h2>
+				<%= index %>
 		<div class="lesson-box">
 			<% show.each_with_index do |lesson, index| %>
+				<% @loop_counter += 1  %>
 				<div class="row">
 					<div class="span1">
 						<h2 class="week-number">
@@ -55,7 +56,7 @@
 					<div class="span8">
 						<h2 class="lesson-headline">
 
-							<% if @full_weeks_since_signup  >= index %>
+							<% if @full_weeks_since_signup  >= @loop_counter %>
 								<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
 							<% else %>
 								<section class="inactive-link">
