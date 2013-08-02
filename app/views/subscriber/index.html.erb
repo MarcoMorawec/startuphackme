@@ -3,8 +3,6 @@
 	<h2 class="main-message">An easy to follow Startup course for people who want to build amazing products</h2>
 </section>
 
-
-
 <section class="offset3 span6 text-center signup sign-up-well ">
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 	<%= f.error_notification %>
@@ -16,22 +14,20 @@
 
 <section class="offset3 span6 text-center">
 	<h2 class="secondary-message">Receive a weekly roadmap to launching a successful product straight to your inbox. Curated by Startup Founders who ship amazing products</h2>
-
-
 </section>
 
-
-<div class="span12 box-top">
+<div class="span12">
 	<hr>
 	<hr class="hr_shadow">
 </div>
 
-<div class="offset3 span6 text-center box-bottom">
+<div class="row-fluid">
+<div class="span6 offset3 text-center box-bottom">
 	<h1 class="team-header">Founding Team</h1>
 </div>
-<section class="span8 offset2 organizers box-bottom">
-	<div class="row">
-		<div class="span2 text-center">
+<section class="row-fluid organizers box-bottom">
+	<div class="span12">
+		<div class="span3 text-center">
 			<%= image_tag('marco_bw.png', :class => 'team-shots'	)	 %>
 			<h1 class="team-name">Marco Morawec</h1>
 			<hr>
@@ -69,4 +65,4 @@
 			<%= link_to image_tag('li_s.png', :class => 'social_img'), "http://www.linkedin.com/in/igirard", target: "_blank" %>
 		</div>
 	</div>
-
+</div>

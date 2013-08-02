@@ -1,7 +1,23 @@
 /* Designed with Love and never ending passion by Isaac, Emily, Marco and Sara */
 
-// partial imports
+// mixins
+
+// @mixin breakpoint($point) {
+//   @if $point == pb {
+//     @media (max-width: 1600px) { @content; }
+//   }
+//   @else if $point == mb {
+//     @media (max-width: 1250px) { @content; }
+//   }
+//   @else if $point == bb {
+//     @media (max-width: 650px)  { @content; }
+//   }
+// }
+
+// imports
+
 @import "_type.scss";
+// @import "compass";
 
 // layout and positioning
 .logo {
