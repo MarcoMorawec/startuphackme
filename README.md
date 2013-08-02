@@ -24,7 +24,7 @@ Amazon S3 integration for picture upload
 - make the domain work - F*ing finally!
 - make lesson link being active based on time from sign-up
 - Make the CMS easier to user (place form fields where they will shop up on the page)
-- 
+- Install Google Analytics - and set a cookie in our browsers to exclude internal traffic
 
 
 
