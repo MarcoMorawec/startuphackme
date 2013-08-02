@@ -1,9 +1,9 @@
 
-<section class="span10 offset1 text-center main-message-box">
-	<h2 class="main-message">An easy to follow Startup course for people who want to build successful products</h2>
+<section class="span8 offset2 text-center main-message-box">
+	<h2 class="main-message">A weekly guide to startups, from finding your idea to founding your dream</h2>
 </section>
-<div class="span3"></div>
-<section class="span6 text-center signup sign-up-well ">
+<div class="span12"></div>
+<section class="span6 offset3 text-center signup sign-up-well">
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
 	<%= f.error_notification %>
 	<%= f.input :email, label: false, placeholder: 'We never share.', :html => { :class=>'input-xlarge'}, wrapper_html: { class: 'input-append' }%>
@@ -11,17 +11,16 @@
 	<%= f.button :submit, class: "btn btn-primary btn-large custom-button", value: "Sign up"  %>
 	<% end %>
 </section>
-<div class="span3"></div>
-
+<!-- <div class="span3"></div>
+ -->
 <section class="offset3 span6 text-center">
 	<h2 class="secondary-message">Receive a weekly roadmap for launching a successful product straight to your inbox. Curated by the best Startup Founders.</h2>
 </section>
-
+</div>
 <div class="span12">
-	<hr>
+	<hr class="hr_main">
 	<hr class="hr_shadow">
 </div>
-
 <div class="row-fluid">
 <div class="span6 offset3 text-center box-bottom">
 	<h1 class="team-header">Founding Team</h1>
@@ -32,7 +31,6 @@
 		<div class="span2 text-center">
 			<%= image_tag('marco_bw.png', :class => 'team-shots'	)	 %>
 			<h1 class="team-name">Marco Morawec</h1>
-			<hr>
 			<hr class="hr_shadow">
 			<h2 class="team-job">Web Developer</h2>
 			<%= link_to image_tag('twi_s.png', :class => 'social_img'), "http://www.twitter.com/marcomorawec", target: "_blank" %>
@@ -42,7 +40,6 @@
 		<div class="span2 text-center">
 			<%= image_tag('sara_bw.png', :class => 'team-shots') %>
 			<h1 class="team-name">Sara Garver</h1>
-			<hr>
 			<hr class="hr_shadow">
 			<h2 class="team-job">Business Evangelist</h2>
 			<%= link_to image_tag('twi_s.png', :class => 'social_img'), "https://twitter.com/skg8d", target: "_blank" %>
@@ -51,7 +48,6 @@
 		<div class="span2 text-center">
 			<%= image_tag('emily_bw.png', :class => 'team-shots') %>
 			<h1 class="team-name">Emily Mills</h1>
-			<hr>
 			<hr class="hr_shadow">
 			<h2 class="team-job">UX Designer</h2>
 			<%= link_to image_tag('twi_s.png', :class => 'social_img'), "http://www.twitter.com/emily_mills", target: "_blank" %>
@@ -60,7 +56,6 @@
 		<div class="span2 text-center">
 			<%= image_tag('isaac.png', :class => 'team-shots') %>
 			<h1 class="team-name">Isaac Girard</h1>
-			<hr>
 			<hr class="hr_shadow">
 			<h2 class="team-job">Front-end Developer</h2>
 			<%= link_to image_tag('twi_s.png', :class => 'social_img'), "https://twitter.com/igirard", target: "_blank" %>
