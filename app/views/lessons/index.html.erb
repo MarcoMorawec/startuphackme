@@ -50,7 +50,7 @@
 					</div>
 					<div class="span8">
 						<h2 class="lesson-headline">
-							<% # logic to show each lesson in 7 day increments %>
+							<% # logic to show each lesson in 7 day increments - weeks since sign-up date = number of links shown %>
 							<% if lesson.week <= 1 %>
 								<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
 							<% else %>
