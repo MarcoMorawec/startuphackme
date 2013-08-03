@@ -9,8 +9,8 @@
 	$light-text: rgba(236, 237, 238, 1.0000); //off-white
 
 // Font Variables
-$subhead-font: 'Helvetica', sans-serif;
-$body-font: 'Helvetica', sans-serif;
+$subhead-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
+$body-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
 
 // common elements
 a {
@@ -208,6 +208,8 @@ footer {
 @font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-300';src: font-url('27D743_1_0.eot');src: font-url('27D743_1_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_1_0.woff') format('woff'),font-url('27D743_1_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-500';src: font-url('27D743_2_0.eot');src: font-url('27D743_2_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_2_0.woff') format('woff'),font-url('27D743_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Substance-Medium-DEMO';src: url('webfonts/27E512_0_0.eot');src: url('webfonts/27E512_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/27E512_0_0.woff') format('woff'),url('webfonts/27E512_0_0.ttf') format('truetype');}
+
 
 //
 .lesson-headline {
