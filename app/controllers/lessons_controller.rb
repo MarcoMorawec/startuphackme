@@ -13,7 +13,7 @@ before_filter :authenticate_user!, :except => [:index]
 
 		#creating the weeks_since_signup variable
 		if user_signed_in? 
-			then @sign_up = current_user.created_at 
+			then @sign_up = current_user.created_at - 7.days ## so the first lesson link is activeon sign-up
 		else 
 			@sign_up = (Time.now - 7.days) ## so the first lesson link is always clickable 
 		end
