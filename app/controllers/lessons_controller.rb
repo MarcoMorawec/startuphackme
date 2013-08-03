@@ -12,7 +12,11 @@ before_filter :authenticate_user!, :except => [:index]
 		@week = @lesson.last
 
 		#creating the weeks_since_signup variable
-		@sign_up = current_user.created_at
+		if user_signed_in? 
+			then @sign_up = current_user.created_at 
+		else 
+			@sign_up = (Time.now - 7.days) ## so the first lesson link is always clickable 
+		end
 		@full_weeks_since_signup = ((Time.now - @sign_up) / 60 / 60 / 24 / 7)
 
 		#creating the loop counter inside the each_slice loop
