@@ -25,7 +25,7 @@ Amazon S3 integration for picture upload - done
 - make the domain work - F*ing finally!
 - make lesson link being active based on time from sign-up - done
 
-- re-direct user to lesson detail page after sign-up
+- re-direct user to lesson detail page after sign-up/sign-in
 
 - Make the CMS easier to user (place form fields where they will shop up on the page)
 - Install Google Analytics - exclude internal traffic via cookie
