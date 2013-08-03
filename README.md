@@ -1,4 +1,6 @@
-A simple App to get great feedback from successful founders
+A simple App to get great feedback from successful founders.
+
+Coded by your @marcomorawec and @igirard
 
 
 __To DO__
@@ -6,7 +8,7 @@ __To DO__
 Marco:
 Integrate Twitter button on modal with Twitter API - done!
 Fix lesson detail page so all lessons show up -> done
-Amazon S3 integration for picture upload 
+Amazon S3 integration for picture upload - done
 	- add image field to db
 	- add the gems -> done
 	- adjut the views and edit/new actions
@@ -20,11 +22,13 @@ Amazon S3 integration for picture upload
 - add the month input field to the lesson edit and new views - done
 - sort the lessons by month first and then by week - done
 - make the loop cycle through the months and lessons properly - done
-
 - make the domain work - F*ing finally!
-- make lesson link being active based on time from sign-up
+- make lesson link being active based on time from sign-up - done
+
+- re-direct user to lesson detail page after sign-up
+
 - Make the CMS easier to user (place form fields where they will shop up on the page)
-- Install Google Analytics - and set a cookie in our browsers to exclude internal traffic
+- Install Google Analytics - exclude internal traffic via cookie
 
 
 
