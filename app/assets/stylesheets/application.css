@@ -32,13 +32,13 @@
  		/*background: url('/assets/light_toast_dark_trans.png'), -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));*/
 
  		/* Safari 5.1+, Chrome 10+ */
- 		background: url('/assets/light_toast_dark_trans.png'), -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+ 		background: url('/assets/light_toast_dark_trans.png'), -webkit-radial-gradient(circle, #1a82f7, #1d2d45);
 
  		/* Firefox 3.6+ */
- 		background: url('/assets/light_toast_dark_trans.png'), -moz-radial-gradient(circle, #1a82f7, #2F2727);
+ 		background: url('/assets/light_toast_dark_trans.png'), -moz-radial-gradient(circle, #1a82f7, #1d2d45);
 
  		/* IE 10 */
- 		background: url('/assets/light_toast_dark_trans.png'), -ms-radial-gradient(circle, #1a82f7, #2F2727);
+ 		background: url('/assets/light_toast_dark_trans.png'), -ms-radial-gradient(circle, #1a82f7, #1d2d45);
 
  		background: url('/assets/light_toast_dark_trans.png'), radial-gradient(circle, #1a82f7, #1d2d45);
  }
