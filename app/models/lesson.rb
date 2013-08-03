@@ -11,5 +11,7 @@ class Lesson < ActiveRecord::Base
 
   	  mount_uploader :curator, CuratorUploader
 
+
+
 end
 
