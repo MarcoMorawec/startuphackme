@@ -5,10 +5,6 @@ class RegistrationsController < Devise::RegistrationsController
     '/lessons'
   end
 
-#need this to work as well
-  def after_sign_in_path_for(user)
-    '/lessons'
-  end
 
 end
 
