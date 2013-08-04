@@ -1,6 +1,6 @@
-A simple App to get great feedback from successful founders.
+A weekly guide to startups, from finding your idea to founding your dream
 
-Coded by your @marcomorawec and @igirard
+Handcrafted by @marcomorawec and @igirard
 
 
 __To DO__
@@ -25,9 +25,11 @@ Amazon S3 integration for picture upload - done
 - make the domain work - F*ing finally!
 - make lesson link being active based on time from sign-up - done
 - re-direct user to lesson detail page after sign-up/sign-in - done
+- em dash (extended dash for twitter) - done
 
-- Make the CMS easier to user (place form fields where they will shop up on the page)
+- Make the CMS easier to user (place form fields where they will show up on the page)
 - Install Google Analytics - exclude internal traffic via cookie
+
 
 
 
