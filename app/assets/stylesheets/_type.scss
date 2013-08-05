@@ -3,14 +3,16 @@
 // Variables
 	// Colors
 	$bold-color: rgba(104, 192, 61, 1.0000); //green
-
 	$name-color: rgba(232, 117, 41, 1.0000); //orange
-
 	$light-text: rgba(236, 237, 238, 1.0000); //off-white
 
 // Font Variables
 $subhead-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
 $body-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
+$special-light: 'Museo-300', sans-serif;
+$special-medium: 'Museo-500', sans-serif;
+$special-heavy: 'Museo-700', sans-serif;
+
 
 // common elements
 a {
@@ -22,7 +24,7 @@ a {
 // base type settings
 html {
 	font-size: 16px;
-	font-style: Arial, sans-serif;
+	font-style: $body-font
 }
 
 body {
@@ -32,7 +34,7 @@ body {
 
 
 .brand {
-	font-family: 'Museo-500', sans-serif;
+	font-family: $special-medium;
 	font-size: .8em;
 	font-weight: normal;
 }
@@ -50,10 +52,12 @@ body {
 		color: inherit;
 	}
 }
+
+
 // Subscriber Specific
 .main-message {
 	color: $bold-color;
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 5em;
 	font-weight: lighter;
 	line-height: 1.1;
@@ -61,15 +65,23 @@ body {
 }
 
 .string.email.required, .button.btn.custom-button {
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	// font-size: 3em; broken!
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
+.secondary-message {
+	font-family: $subhead-font;
+    font-size: 1.3em;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    line-height: 1.3em;
+}
 
+// Organizers Section
 .team-header {
 	color: $bold-color;
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 2em;
 	font-weight: lighter;
 	line-height: 1.1;
@@ -79,7 +91,7 @@ body {
 
 .team-name {
 	color: $name-color;
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 1.5em;
 	font-weight: lighter;
 	line-height: 1.1;
@@ -98,7 +110,7 @@ body {
 
 .week-number {
 	color: $bold-color;
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 7em;
 	font-weight: bold;
 	line-height: 1.1;
@@ -107,7 +119,7 @@ body {
 
 .lesson-week {
 	color: rgba(236, 237, 238, 1.0000);
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 3em;
 	font-weight: bold;
 	line-height: 1.1;
@@ -116,7 +128,7 @@ body {
 
 .lesson-main-headline {
 	color: rgba(236, 237, 238, 1.0000);
-	font-family: 'Museo-700';
+	font-family: $special-heavy;
 	font-size: 4.5em;
 	font-weight: bold;
 	line-height: 1.1;
@@ -137,7 +149,7 @@ body {
 .lesson_block {
 	
 	h1 {
-		font-family: 'Museo-700';
+		font-family: $special-heavy;
 		font-size: 7em;
 		font-weight: lighter;
 	}
@@ -162,14 +174,14 @@ body {
 	}
 
 	h2 {
-		font-family: 'Museo-300';
+		font-family: $special-light;
 		font-size: 4em;
 		font-weight: lighter;
 	}
 
 	.curator_block h1 {
 		color: $name-color;
-		font-family: 'Museo-300', sans-serif;
+		font-family: $special-light, sans-serif;
 		font-size: 2em;
 		font-weight: lighter;
 		text-transform: none;
@@ -180,7 +192,7 @@ body {
 
 .main-modal-message {
 	color: black;
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 3em;
 	font-weight: lighter;
 	line-height: 1.1;
@@ -189,7 +201,7 @@ body {
 
 .header-modal-message {
 	color: $bold-color;
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 4em;
 	font-weight: lighter;
 	line-height: 1.1;
@@ -205,16 +217,16 @@ footer {
 
 
 // Font-face BS
-@font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-300';src: font-url('27D743_1_0.eot');src: font-url('27D743_1_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_1_0.woff') format('woff'),font-url('27D743_1_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-500';src: font-url('27D743_2_0.eot');src: font-url('27D743_2_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_2_0.woff') format('woff'),font-url('27D743_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}
 @font-face {font-family: 'Substance-Medium-DEMO';src: url('webfonts/27E512_0_0.eot');src: url('webfonts/27E512_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/27E512_0_0.woff') format('woff'),url('webfonts/27E512_0_0.ttf') format('truetype');}
 
 
 //
 .lesson-headline {
 	color: rgba(236, 237, 238, 1.0000);
-	font-family: 'Museo-300';
+	font-family: $special-light;
 	font-size: 3.5em;
 	font-weight: bold;
 	line-height: 1.1;
