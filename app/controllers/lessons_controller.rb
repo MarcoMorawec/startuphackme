@@ -26,6 +26,7 @@ before_filter :authenticate_user!, :except => [:index]
 
 	def show
 		@lesson = Lesson.find(params[:id])
+		@admin = if user_signed_in? then current_user.admin else nil end
 	end
 
 	def new

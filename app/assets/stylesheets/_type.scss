@@ -167,12 +167,19 @@ body {
 		font-weight: lighter;
 	}
 
-	.curator_block h1 {
+	.curator_block 
+
+	h1 {
 		color: $name-color;
 		font-family: 'Museo-300', sans-serif;
 		font-size: 2em;
 		font-weight: lighter;
 		text-transform: none;
+	}
+	h2 {
+		font-family: 'Museo-300';
+		font-size: 4em;
+		font-weight: lighter;
 	}
 }
 
