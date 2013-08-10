@@ -1,13 +1,13 @@
   <%= f.error_notification %>
   <%= f.input :week, label: 'Which week is this lesson for?'  %>
   <p>
-  <%= f.input :month, label: 'Which month is this lesson for ->  Write "ONE" for the first month?'  %>
+  <%= f.input :month, label: 'Which month is this lesson for ->  Write 1 for the first month?'  %>
 
 
 
-  <%= f.input :name, label: 'Lesson Name'  %>
-  <%= f.input :main_headline, label: 'Main Headline', as: :text, input_html: { rows: "3" } %>
-  <%= f.input :weekly_tagline, label: 'Weekly Tagline', as: :text, input_html: { rows: "3" } %>  
+  <%= f.input :name, label: 'Lesson Name - Do not use'  %>
+  <%= f.input :main_headline, label: 'Main Headline - Lesson Detail Page', as: :text, input_html: { rows: "3" } %>
+  <%= f.input :weekly_tagline, label: 'Weekly Tagline - Lesson Overview Page', as: :text, input_html: { rows: "3" } %>  
   </br>
   </br>
   <%= f.input :first_ressource_headline, label: 'First Ressource Headline' %>
