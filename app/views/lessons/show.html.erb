@@ -31,18 +31,26 @@
 			</article>
 		</section>
 
-		<section class="span4 offset1 lesson_summary">
+		<section class="span5 offset1 lesson_summary">
 
 			<h1 class="lesson-week">
 				Week <%= @lesson.week %>
 			</h1>
 			<h2 class="lesson-main-headline"><%= @lesson.main_headline %></h2>
-			<p><%= @lesson.curator_description %></p>
+
+			<p><%= @lesson.description %></p>
+						<hr class="hr_main">
+
 
 			<div class="row">
-				<article class="span4 curator_block">
+				<article class="curator_block">
+				<h2 class="lesson-main-headline">Your Curator</h2>
 					<p><%= image_tag(@lesson.curator_url(:curator).to_s, :class => 'team-shots') %></p>
 					<h1><%= @lesson.curator_name %></h1>
+					<h2><%= @lesson.curator_organization %></h2>
+				<div class="span">
+					<p><%= @lesson.curator_description %></p>
+				</div>
 				</article>
 			</div>
 		</div>
