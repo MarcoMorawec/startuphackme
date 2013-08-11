@@ -27,9 +27,10 @@ Amazon S3 integration for picture upload - done
 - re-direct user to lesson detail page after sign-up/sign-in - done
 - em dash (extended dash for twitter) - done
 - add lesson discription to DB and show in lesson detail page below lesson main headline, add to new&edit forms as well - Done
+- check image upload function so it resizes correctly - done
+- Make the CMS easier to user (place form fields where they will show up on the page) - done
+- delete the white lines on lesson overview page - done
 
-- check image upload function so it resizes correctly - might be a span issue, double checking
-- Make the CMS easier to user (place form fields where they will show up on the page)
 - Install Google Analytics - exclude internal traffic via cookie
 
 
