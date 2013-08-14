@@ -1,0 +1,117 @@
+<div class="container">
+
+		<div class="span6 offset">
+			<%= f.error_notification %>
+			<h2>Basic info for every lesson</h2>
+			<div class="row">
+				<div class="span4 offset2">
+			  <%= f.input :month, label: 'Which month is this lesson for ->  Write 1 for the first month?'  %>
+			  	</div>
+			  	<div class="span4 offset2">
+			   <%= f.input :weekly_tagline, label: 'Weekly Tagline - For the Lesson Overview Page', as: :text, input_html: { rows: "3" } %>
+			  	</div>
+			</div>
+		</div>
+</div>
+<hr>
+
+	<div class="row box-to">
+		<section class="span4 offset1">
+				<h1>1</h1>
+				<hr>
+				<h2>
+					<%= f.input :first_ressource_headline, label: 'First Ressource Headline' %>
+				</h2>
+				<p>
+					<%= f.input :first_ressource_text, label: 'Description', as: :text, input_html: { rows: "3" } %>
+				</p>
+				<p>
+ 					<%= f.input :first_ressource_headline_link, label: 'First Ressource Link' %>
+				</p>
+			</br>
+				<h1>2</h1>
+				<hr>
+				<h2>
+					<%= f.input :second_ressource_headline, label: 'Second Ressource Headline' %>
+				</h2>
+				<p>
+					<%= f.input :second_ressource_text, label: 'Description', as: :text, input_html: { rows: "3" } %>
+				</p>
+				<p>
+					<%= f.input :second_ressource_headline_link, label: 'Second Ressource Link' %>
+				</p>
+			</br>
+				<h1>3</h1>
+				<hr>
+				<h2>
+  					<%= f.input :third_ressource_headline, label: 'Third Ressource Headline' %>
+				</h2>
+				<p>
+  					<%= f.input :third_ressource_text, label: 'Description', as: :text, input_html: { rows: "3" } %>
+  				</p>
+  				<p>
+ 					<%= f.input :third_ressource_headline_link, label: 'Third Ressource Link' %>
+  				</p>
+			</br>
+				<h1>4</h1>
+				<hr>
+				<h2>
+ 					<%= f.input :fourth_ressource_headline, label: 'Fourth Ressource Headline' %>
+				</h2>
+				<p>
+					<%= f.input :fourth_ressource_text, label: 'Description', as: :text, input_html: { rows: "3" } %>
+				</p>
+				<p>
+ 					<%= f.input :fourth_ressource_headline_link, label: 'Fourth Ressource Link' %>
+				</p>
+			</br>
+				<h1>5</h1>
+				<hr>
+				<h2>
+ 					<%= f.input :fifth_ressource_headline, label: 'Fifth Ressource Headline' %>
+				</h2>
+				<p>
+					<%= f.input :fifth_ressource_text, label: 'Description', as: :text, input_html: { rows: "3" } %>
+				</p>
+				<p>
+ 					<%= f.input :fifth_ressource_headline_link, label: 'Fifth Ressource Link' %>
+				</p>	
+
+		</section>
+
+		<section class="span5 offset1 lesson_summary">
+
+			<h1 class="lesson-week">
+				Week   
+				<%= f.input :week, label: 'Which week is this lesson for?'  %>
+
+			</h1>
+			<h2 class="lesson-main-headline">
+  			<%= f.input :main_headline, label: 'Main Headline - Lesson Detail Page', as: :text, input_html: { rows: "3" } %>
+			</h2>
+			<h2>
+  				<%= f.input :description, label: 'What is this lesson about?', as: :text, input_html: { rows: "8" } %>	
+  			</h2>
+  			<hr class="hr_main">
+
+
+			<div class="row">
+				<article class="curator_block">
+				<h2 class="lesson-main-headline">Your Curator</h2>
+					<p> 
+						<%= f.input :curator, label: 'Image of the curator' %>
+					</p>
+					<h1> 
+						<%= f.input :curator_name, label: 'Name of weekly Curator' %>
+					</h1>
+					<h2>
+  						<%= f.input :curator_organization, label: 'Organization of weekly Curator' %>
+  					</h2>
+				<div class="span">
+					<p>
+ 						<%= f.input :curator_description, label: 'Bio of weekly curator', as: :text, input_html: { rows: "10" } %>
+ 					</p>
+				</div>
+				</article>
+			</div>
+		</div>

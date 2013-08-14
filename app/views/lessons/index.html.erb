@@ -47,8 +47,8 @@
 							<%= lesson.week %>
 						</h2>
 					</div>
-					<div class="span8">
-						<h2 class="lesson-headline">
+					<div class="span10">
+						<h2 class="lesson-headline space">
 
 							<% if @full_weeks_since_signup  >= @loop_counter %>
 								<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
