@@ -27,8 +27,9 @@ gem 'simple_form'
 
 gem 'therubyracer'
 gem 'less-rails'
-gem 'twitter-bootstrap-rails'
 gem 'devise'
+
+gem 'less-rails-bootstrap', '~> 3.0.0.wip', github: 'sinfin/less-rails-bootstrap-3'
 
 #for social sharing
 gem 'shareable'
