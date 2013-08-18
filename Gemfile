@@ -20,6 +20,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+#using rSpec for testing and TDD 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
+
 gem 'jquery-rails'
 
 #better forms
