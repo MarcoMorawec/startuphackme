@@ -30,9 +30,11 @@ Amazon S3 integration for picture upload - done
 - check image upload function so it resizes correctly - done
 - Make the CMS easier to user (place form fields where they will show up on the page) - done
 - delete the white lines on lesson overview page - done
+- Install Google Analytics - exclude internal traffic via cookie - done
 
-- Install Google Analytics - exclude internal traffic via cookie
+- email user after sign-up
 
+- email user new lessons link every 7 days
 
 
 
