@@ -2,6 +2,7 @@ A weekly guide to startups, from finding your idea to founding your dream
 
 Handcrafted by @marcomorawec and @igirard
 
+--> This app runs mailcatcher
 
 __To DO__
 
