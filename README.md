@@ -34,6 +34,10 @@ Amazon S3 integration for picture upload - done
 - Install Google Analytics - exclude internal traffic via cookie - done
 
 - email user after sign-up
+	- mailcatcher is done
+	- gmail integration
+	- get email address set-up hello@startuphack.it
+	- sendgrid integration
 
 - email user new lessons link every 7 days
 
