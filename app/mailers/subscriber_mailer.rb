@@ -1,5 +1,5 @@
 class SubscriberMailer < ActionMailer::Base
-  default from: "startuphack@gmail.com"
+  default from: "Startuphack@gmail.com"
 
 
    def welcome_email(subscriber)
