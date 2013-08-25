@@ -20,6 +20,14 @@
 // @import "compass";
 
 // layout and positioning
+.site_wrap {
+    max-width: 960px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
 .logo {
 	margin-top: 50px;
 }
