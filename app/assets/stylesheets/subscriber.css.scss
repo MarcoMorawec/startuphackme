@@ -28,7 +28,7 @@ nav {
 
 // Form Section Layout
 .sign-up-well {
-	background: rgba(0,0,0,.35);
+	background: rgba(0,0,0,.15);
 	border: 1px none black;
 	box-shadow: 0 1px 1px rgba(255,255,255,0.2);
 	height: 95px;
@@ -40,6 +40,7 @@ nav {
 
 .form-horizontal {
 	margin-top: 19px;
+	padding: 20px;
 }
 
 .string.email.required {
