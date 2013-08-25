@@ -5,10 +5,10 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-43318850-1']);
@@ -20,40 +20,41 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+  </script>
 
 </head>
 <body>
-  <div class="site_wrap row-fluid">
+  <div class="row-fluid">
     <div class="container span12">
-<header class="span12">
-  <div class="logo">
-    <h1><%= link_to "startup hack", root_path, :class => "brand no-style-link" %></h1>
-  </div>
-  <nav class="navbar navbar-fluid-top">
-      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"></a>
-      <div class="container-fluid nav-collapse">
-        <ul class="nav pull-right">
-          <li><%= link_to "About", lessons_path, :class => 'no-style-link'  %></li>
-          <li><%= link_to "Lessons", lessons_path, :class => 'no-style-link'  %></li>
-          <li>|</li>
-          <% if user_signed_in? %>
-          <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => 'no-style-link' %> </li>
-          <% else %>
-          <li><%= link_to "Sign in", new_user_session_path, :class => 'no-style-link' %> </li>
-          <% end %>
-        </ul>
-      </div> <!-- end container-fluid -->
-  </nav>
-  <hr class="hr_main">
-  <hr class="hr_shadow">
-</header>
+      <header>
+        <div class="content_wrap">
+        <div class="logo">
+          <h1><%= link_to "startup hack", root_path, :class => "brand no-style-link" %></h1>
+        </div>
+        <nav class="navbar navbar-fluid-top">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"></a>
+          <div class="container-fluid nav-collapse">
+            <ul class="nav pull-right">
+              <li><%= link_to "About", lessons_path, :class => 'no-style-link'  %></li>
+              <li><%= link_to "Lessons", lessons_path, :class => 'no-style-link'  %></li>
+              <li>|</li>
+              <% if user_signed_in? %>
+              <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => 'no-style-link' %> </li>
+              <% else %>
+              <li><%= link_to "Sign in", new_user_session_path, :class => 'no-style-link' %> </li>
+              <% end %>
+            </ul>
+          </div> <!-- end container-fluid -->
+        </nav>
+        <hr class="hr_main">
+        <hr class="hr_shadow">
+      </div> <!-- end content_wrap -->
+    </header>
     <%= yield %>
-    <div class="row-fluid">
-  <footer class="span12 text-center">
-    Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts
-  </footer>
-</div>
+    <footer class="text-center">
+      <p>Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts.</p>
+    </footer>
+  </div>
 </div>
 </body>
 </html>
