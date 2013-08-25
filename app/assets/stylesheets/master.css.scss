@@ -18,6 +18,7 @@
 
 @import "_type.scss";
 // @import "compass";
+// @import "compass/reset;";
 
 // layout and positioning
 .site_wrap {
@@ -25,9 +26,13 @@
     max-width: 960px;
 }
 
-.no-style-link:hover {
-	text-decoration: none;
-	color: rgba(104, 192, 61, 1.0000);
+.logo {
+    float: left;
+    margin-left: 20px;
+}
+
+.navbar {
+    margin-bottom: 0;
 }
 
 // hr styling
