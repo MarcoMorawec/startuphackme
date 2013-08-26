@@ -28,33 +28,33 @@
     <div class="container span12">
       <header>
         <div class="content_wrap">
-        <div class="logo">
-          <h1><%= link_to "startup hack", root_path, :class => "brand no-style-link" %></h1>
-        </div>
-        <nav class="navbar navbar-fluid-top">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"></a>
-          <div class="container-fluid nav-collapse">
-            <ul class="nav pull-right">
-              <li><%= link_to "About", lessons_path, :class => 'no-style-link'  %></li>
-              <li><%= link_to "Lessons", lessons_path, :class => 'no-style-link'  %></li>
-              <li>|</li>
-              <% if user_signed_in? %>
-              <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => 'no-style-link' %> </li>
-              <% else %>
-              <li><%= link_to "Sign in", new_user_session_path, :class => 'no-style-link' %> </li>
-              <% end %>
-            </ul>
-          </div> <!-- end container-fluid -->
-        </nav>
-        <hr class="hr_main">
-        <hr class="hr_shadow">
-      </div> <!-- end content_wrap -->
-    </header>
-    <%= yield %>
-    <footer class="text-center">
-      <p>Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts.</p>
-    </footer>
+          <div class="logo">
+            <%= link_to "startup hack", root_path, :class => "brand no-style-link" %>
+          </div>
+          <nav class="navbar navbar-fluid-top">
+            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"></a>
+            <div class="container-fluid nav-collapse">
+              <ul class="nav pull-right">
+                <li><%= link_to "About", lessons_path, :class => 'no-style-link'  %></li>
+                <li><%= link_to "Lessons", lessons_path, :class => 'no-style-link'  %></li>
+                <li>|</li>
+                <% if user_signed_in? %>
+                <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => 'no-style-link' %> </li>
+                <% else %>
+                <li><%= link_to "Sign in", new_user_session_path, :class => 'no-style-link' %> </li>
+                <% end %>
+              </ul>
+            </div> <!-- end container-fluid -->
+          </nav>
+        </div> <!-- end content_wrap -->
+      </header>
+      <hr class="hr_main">
+      <hr class="hr_shadow">
+      <%= yield %>
+      <footer class="text-center">
+        <p>Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts.</p>
+      </footer>
+    </div>
   </div>
-</div>
 </body>
 </html>

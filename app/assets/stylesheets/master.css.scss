@@ -22,7 +22,7 @@
 
 // texture and color variables
 $dark-bg-texture: url('/assets/SIB001_texture_B.png');
-$darken-texture: rgba(0,0,0,.25);
+$darken-texture: rgba(0,0,0,.20);
 $light-bg-texture: url('/assets/SIB001_texture_A.png');
 $lighten-texture: rgba(255,255,255,.25);
 $body-color: rgba(70, 70, 70, 1.0000);
@@ -30,11 +30,11 @@ $body-color: rgba(70, 70, 70, 1.0000);
 
 // background styling
 body {
-    background: $body-color;
+    background: $dark-bg-texture;
 }
 
 header {
-    background: $dark-bg-texture, $darken-texture;
+    background: $darken-texture;
     height: 60px;
 }
 
@@ -47,11 +47,12 @@ header {
 
 .logo {
     float: left;
-    margin-left: 20px;
+    margin: 20px 0 0 20px;
 }
 
 .navbar {
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 
