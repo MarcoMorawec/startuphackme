@@ -42,8 +42,3 @@
 
  		background: url('/assets/light_toast_dark_trans.png'), radial-gradient(circle, #1a82f7, #1d2d45);
  }
-
- /* Universal Header Styles */
- header {
- 	height: 100px;
- }

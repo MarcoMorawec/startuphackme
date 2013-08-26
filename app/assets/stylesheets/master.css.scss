@@ -15,58 +15,69 @@
 // }
 
 // imports
-
 @import "_type.scss";
-// @import "compass";
+// @import "compass"; not working - not critical
+// @import "compass/reset;"; not working - not critical
+
+
+// texture and color variables
+$dark-bg-texture: url('/assets/SIB001_texture_B.png');
+$darken-texture: rgba(0,0,0,.20);
+$light-bg-texture: url('/assets/SIB001_texture_A.png');
+$lighten-texture: rgba(255,255,255,.25);
+$body-color: rgba(70, 70, 70, 1.0000);
+
+
+// background styling
+body {
+    background: $dark-bg-texture;
+}
+
+header {
+    background: $darken-texture;
+    height: 60px;
+}
+
 
 // layout and positioning
+.content_wrap {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
 .logo {
-	margin-top: 50px;
+    float: left;
+    margin: 20px 0 0 20px;
 }
 
-.no-style-link:hover {
-	text-decoration: none;
-	color: rgba(104, 192, 61, 1.0000);
+.navbar {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.no-style-link-lesson:hover {
-	text-decoration: none;
-	color: black;
-}
 
-// hr styling including hacked together drop shadow
+// header hr styling
 .hr_main {
 	border: 0;
-    background: #0d152a;
-    background-image: -webkit-linear-gradient(left, #23263c, #0d152a, #23263c); 
-    background-image:    -moz-linear-gradient(left, #23263c, #0d152a, #23263c); 
-    background-image:     -ms-linear-gradient(left, #23263c, #0d152a, #23263c); 
-    background-image:      -o-linear-gradient(left, #23263c, #0d152a, #23263c);
-    height: 1px;
+    background: rgba(0,0,0,.5);
+    height: .1em;
     margin: 0;
 }
 
 .hr_shadow {
 	border: 0;
-    background: #333;
-    background-image: -webkit-linear-gradient(left, #202227, #175a87, #202227); 
-    background-image:    -moz-linear-gradient(left, #202227, #175a87, #202227); 
-    background-image:     -ms-linear-gradient(left, #202227, #175a87, #202227); 
-    background-image:      -o-linear-gradient(left, #202227, #175a87, #202227);
-    height: 1px;
-    margin: 0 0 0 0;
+    background: rgba(255,255,255,.08);
+    height: .1em;
+    margin: 0;
 }
 
-.hr_mini {
 
-}
+// see page specific stylesheets
 
-hr {
-    width: 100%;
-}
 
+// footer stylings
 
 footer {
-	margin-top: 90px;
-	margin-bottom: 10px;
+    background: $light-bg-texture, $lighten-texture;
+	padding-bottom: 10px;
 }

@@ -2,16 +2,16 @@
 
 // Variables
 	// Colors
-	$bold-color: rgba(104, 192, 61, 1.0000); //green
+	$bold-color: rgba(236, 237, 238, 1.0000); //off-white
 	$name-color: rgba(232, 117, 41, 1.0000); //orange
-	$light-text: rgba(236, 237, 238, 1.0000); //off-white
+	$light-text: rgba(255, 255, 255, 1.0000); //white
 
-// Font Variables
-$subhead-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
-$body-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
-$special-light: 'Museo-300', sans-serif;
-$special-medium: 'Museo-500', sans-serif;
-$special-heavy: 'Museo-700', sans-serif;
+	// Font Variables
+	$subhead-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
+	$body-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
+	$special-light: 'Museo-300', sans-serif;
+	$special-medium: 'Museo-500', sans-serif;
+	$special-heavy: 'Museo-700', sans-serif;
 
 
 // common elements
@@ -33,18 +33,22 @@ body {
 }
 
 
-.brand {
+.logo{
 	font-family: $special-medium;
-	font-size: .8em;
+	font-size: 2.8em;
 	font-weight: normal;
+
+	&:hover {
+		color: $light-text;
+		text-decoration: none;
+	}
 }
 
 .navbar .nav li a { // this is incredibly specific in order to override the ridiculous bootstrap selector
-	color: $light-text;
+	color: inherit;
 	font-size: 1.2em;
 	font-weight: lighter;
 	letter-spacing: .18em;
-	padding-bottom: 0;
 	text-shadow: 0 0 0 #000000;
 	text-transform: uppercase;
 
@@ -78,7 +82,7 @@ body {
     line-height: 1.3em;
 }
 
-// Organizers Section
+// Curators Section
 .team-header {
 	color: $bold-color;
 	font-family: $special-light;
@@ -223,7 +227,7 @@ footer {
 }
 
 
-// Font-face BS
+// Font-face
 @font-face {font-family: 'Museo-300';src: font-url('27D743_1_0.eot');src: font-url('27D743_1_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_1_0.woff') format('woff'),font-url('27D743_1_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-500';src: font-url('27D743_2_0.eot');src: font-url('27D743_2_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_2_0.woff') format('woff'),font-url('27D743_2_0.ttf') format('truetype');}
 @font-face {font-family: 'Museo-700';src: font-url('27D743_0_0.eot');src: font-url('27D743_0_0.eot?#iefix') format('embedded-opentype'),font-url('27D743_0_0.woff') format('woff'),font-url('27D743_0_0.ttf') format('truetype');}
