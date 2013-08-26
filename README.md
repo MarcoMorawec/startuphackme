@@ -36,8 +36,10 @@ Amazon S3 integration for picture upload - done
 - email user after sign-up
 	- mailcatcher - done
 	- gmail integration - done 
-	- get email address set-up hello@startuphack.it
+
+	- get email address set-up hello@startuphack.it - changed MX records on 101, waiting for propagation
 	- postmark (10k email/month free) integration
+
 
 - email user new lessons link every 7 days
 
