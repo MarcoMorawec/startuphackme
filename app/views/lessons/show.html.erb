@@ -1,12 +1,12 @@
 <div class="container">
 	<div class="row box-top">
 
-		<section class="span6 offset3 lesson_summary">
+		<section class="span6 offset3 text-center lesson_summary">
 
 				<h1 class="lesson-week">
 					Week <%= @lesson.week %>
 				</h1>
-				<h2 class="lesson-main-headline"><%= @lesson.main_headline %></h2>
+				<h3 class="lesson-main-headline"><%= @lesson.main_headline %></h3>
 				<article class="curator_block">
 					<p><%= image_tag(@lesson.curator_url(:curator).to_s, :class => 'curator-shots') %></p>
 					<h1><%= @lesson.curator_name %></h1>
@@ -17,8 +17,6 @@
 				</div>
 		</section>
 	</div>
-						<hr class="hr_main">
-
 
 		<section class="span6 offset3">
 			<article class="lesson_block">

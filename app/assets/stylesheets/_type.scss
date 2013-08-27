@@ -3,7 +3,7 @@
 // Variables
 	// Colors
 	$bold-color: rgba(236, 237, 238, 1.0000); //off-white
-	$name-color: rgba(232, 117, 41, 1.0000); //orange
+	$name-color: #00AA55; //green
 	$light-text: rgba(255, 255, 255, 1.0000); //white
 
 	// Font Variables
@@ -124,7 +124,7 @@ body {
 .lesson-week {
 	color: rgba(236, 237, 238, 1.0000);
 	font-family: $special-light;
-	font-size: 3em;
+	font-size: 1.3em;
 	font-weight: bold;
 	line-height: 1.1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -132,11 +132,13 @@ body {
 
 .lesson-main-headline {
 	color: rgba(236, 237, 238, 1.0000);
-	font-family: $special-heavy;
-	font-size: 4.5em;
+	font-family: $special-light;
+	font-weight: lighter;
+	font-size: 3.1em;
 	font-weight: bold;
 	line-height: 1.1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	color: #525252;
 }
 
 
@@ -171,16 +173,19 @@ body {
 
 	h1 {
 		font-family: $subhead-font;
-		font-size: 1.3em;
 		font-weight: lighter;
 		letter-spacing: .1em;
 		text-transform: uppercase;
+		color: #525252;
 	}
 
 	h2 {
 		font-family: $special-light;
-		font-size: 4em;
 		font-weight: lighter;
+	}
+
+	p {
+		color: #525252;
 	}
 
 	.curator_block 
@@ -192,10 +197,14 @@ body {
 		font-weight: lighter;
 		text-transform: none;
 	}
+
 	h2 {
 		font-family: 'Museo-300';
-		font-size: 4em;
+		font-size: 1.6em;
+		letter-spacing: .2em;
 		font-weight: lighter;
+		color: $name-color;
+
 	}
 }
 
