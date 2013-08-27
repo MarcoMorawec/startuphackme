@@ -46,7 +46,7 @@ class CuratorUploader < CarrierWave::Uploader::Base
       process :resize_to_limit => [150, 150]
    end
   version :curator do
-      process :resize_to_limit => [150, 150]
+      process :resize_to_limit => [246, 246]
    end
 
    version :masthead do

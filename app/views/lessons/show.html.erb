@@ -1,7 +1,26 @@
 <div class="container">
 	<div class="row box-top">
 
-		<section class="span4 offset1">
+		<section class="span6 offset3 lesson_summary">
+
+				<h1 class="lesson-week">
+					Week <%= @lesson.week %>
+				</h1>
+				<h2 class="lesson-main-headline"><%= @lesson.main_headline %></h2>
+				<article class="curator_block">
+					<p><%= image_tag(@lesson.curator_url(:curator).to_s, :class => 'curator-shots') %></p>
+					<h1><%= @lesson.curator_name %></h1>
+					<h2><%= @lesson.curator_organization %></h2>
+				</article>
+				<div class="span">
+					<p><%= @lesson.description %></p>
+				</div>
+		</section>
+	</div>
+						<hr class="hr_main">
+
+
+		<section class="span6 offset3">
 			<article class="lesson_block">
 				<h1>1</h1>
 				<hr>
@@ -30,30 +49,9 @@
 				<p><%= @lesson.fourth_ressource_text%></p>
 			</article>
 		</section>
+	
 
-		<section class="span5 offset1 lesson_summary">
-
-			<h1 class="lesson-week">
-				Week <%= @lesson.week %>
-			</h1>
-			<h2 class="lesson-main-headline"><%= @lesson.main_headline %></h2>
-
-			<p><%= @lesson.description %></p>
-						<hr class="hr_main">
-
-
-			<div class="row">
-				<article class="curator_block">
-					<p><%= image_tag(@lesson.curator_url(:curator).to_s, :class => 'team-shots') %></p>
-					<h1><%= @lesson.curator_name %></h1>
-					<h2><%= @lesson.curator_organization %></h2>
-				<div class="span">
-					<p><%= @lesson.curator_description %></p>
-				</div>
-				</article>
-			</div>
-		</div>
-	</div>
+	
 
 	<div class="span5 offset3">
 		<% if @admin %>
