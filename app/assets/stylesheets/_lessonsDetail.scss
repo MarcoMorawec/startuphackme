@@ -63,14 +63,6 @@
 	}
 }
 
-.lesson_block_marco {
-	height: 200px;
-width: 480px;
-background-color: #00AA55;
-border-top: 1px solid #4dc488;
-border-right: 1px solid #032615;
-border-bottom: 1px solid #032615;
-}
 
 .lesson_summary {
 	margin: 0px;
@@ -98,4 +90,8 @@ border-bottom: 1px solid #032615;
 .background-lesson-detail {
 	background: url('/assets/SIB001_texture_A.png');
 	color: rgba(255,255,255,.25);
+}
+
+.curator-shots {
+	border: 4px solid white;
 }
