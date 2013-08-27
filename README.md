@@ -36,8 +36,13 @@ Amazon S3 integration for picture upload - done
 - email user after sign-up
 	- mailcatcher - done
 	- gmail integration - done 
-	- get email address set-up hello@startuphack.it
+	- get email address set-up hello@startuphack.it - done
 	- postmark (10k email/month free) integration
+
+- Create the new front-end designs
+	- lessond detail page
+	- homepage
+	- lesson overview page
 
 - email user new lessons link every 7 days
 
