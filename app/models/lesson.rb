@@ -6,7 +6,9 @@ class Lesson < ActiveRecord::Base
   					:curator_name, :curator_description,
   					:first_ressource_headline_link, :second_ressource_headline_link, 
   					:third_ressource_headline_link, :fourth_ressource_headline_link,
-  					:fifth_ressource_headline_link, :curator, :month, :description, :curator_organization
+  					:fifth_ressource_headline_link, :curator, :month, :description, :curator_organization,
+  					:first_ressource_task, :second_ressource_task, :third_ressource_task,
+  					:fourth_ressource_task, :fifth_ressource_task
 
 
   	  mount_uploader :curator, CuratorUploader
@@ -14,4 +16,6 @@ class Lesson < ActiveRecord::Base
 
 
 end
+
+
 

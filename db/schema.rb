@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130810194627) do
+ActiveRecord::Schema.define(:version => 20130827203836) do
 
   create_table "lessons", :force => true do |t|
     t.string   "name"
@@ -41,6 +41,11 @@ ActiveRecord::Schema.define(:version => 20130810194627) do
     t.string   "month"
     t.string   "curator_organization"
     t.text     "description"
+    t.string   "first_ressource_task"
+    t.string   "second_ressource_task"
+    t.string   "third_ressource_task"
+    t.string   "fourth_ressource_task"
+    t.string   "fifth_ressource_task"
   end
 
   create_table "subscribers", :force => true do |t|
