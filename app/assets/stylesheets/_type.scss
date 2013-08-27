@@ -127,6 +127,7 @@ body {
 	font-size: 1.3em;
 	font-weight: bold;
 	line-height: 1.1;
+	letter-spacing: 0.3em;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
@@ -137,7 +138,6 @@ body {
 	font-size: 3.1em;
 	font-weight: bold;
 	line-height: 1.1;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	color: #525252;
 }
 
@@ -153,6 +153,8 @@ body {
 }
 
 .lesson_block {
+
+	color: white;
 	
 	h1 {
 		font-family: $special-heavy;
@@ -174,7 +176,6 @@ body {
 	h1 {
 		font-family: $subhead-font;
 		font-weight: lighter;
-		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: #525252;
 	}

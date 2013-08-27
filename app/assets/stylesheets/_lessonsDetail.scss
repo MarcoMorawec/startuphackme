@@ -34,14 +34,14 @@
 }
 
 .lesson_summary {
-	margin: 10px;
+	margin: 0px;
 
 	h1 {
-		margin-bottom: 5px;
+		margin-bottom: 0px;
 	}
 
 	h2 {
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 
 	.curator_block {
@@ -54,4 +54,9 @@
 			width: 160px;
 		}
 	}
+}
+
+.background-lesson-detail {
+	background: url('/assets/SIB001_texture_A.png');
+	color: rgba(255,255,255,.25);
 }
