@@ -26,7 +26,7 @@
 				<hr>
 				<h2><%= link_to(@lesson.first_ressource_headline, @lesson.first_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
 				<p><%= @lesson.first_ressource_text %></p>
-				<p><%= @lesson.first_ressource_task %></p>
+				<task class="task">TASK: </task><p><%= @lesson.first_ressource_task %></p>
 			</article>
 
 			<article class="lesson_block">
@@ -34,6 +34,7 @@
 				<hr>
 				<h2><%= link_to(@lesson.second_ressource_headline, @lesson.second_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
 				<p><%= @lesson.second_ressource_text%></p>
+				<task class="task">TASK: </task><p><%= @lesson.second_ressource_task %></p>		
 			</article>
 
 			<article class="lesson_block">
@@ -41,6 +42,7 @@
 				<hr>
 				<h2><%= link_to(@lesson.third_ressource_headline, @lesson.third_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
 				<p><%= @lesson.third_ressource_text%></p>
+				<task class="task">TASK: </task><p><%= @lesson.third_ressource_task %></p>		
 			</article>
 
 			<article class="lesson_block">
@@ -48,6 +50,7 @@
 				<hr>
 				<h2><%= link_to(@lesson.fourth_ressource_headline, @lesson.fourth_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
 				<p><%= @lesson.fourth_ressource_text%></p>
+				<task class="task">TASK: </task><p><%= @lesson.fourth_ressource_task %></p>
 			</article>
 		</section>
 	

@@ -1,6 +1,6 @@
 // partial containing styles specific to the lessons detail view
 
-.lesson_block {
+.lesson_block_old {
 	background: #87c662; /* Old browsers */
 	background: -moz-linear-gradient(top,  #87c662 0%, #6ab83a 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87c662), color-stop(100%,#6ab83a)); /* Chrome,Safari4+ */
@@ -31,6 +31,45 @@
 		display: none;
 		transform: rotate(90deg);
 	}
+}
+
+.lesson_block {
+	background: #00AA55; /* Old browsers */
+	border-top: 1px solid #4dc488;
+	border-right: 1px solid #032615;
+	border-bottom: 1px solid #032615;
+	height: 200px;
+	margin: 18px 0;
+	width: 480px;
+
+	&:first-child {
+		margin-top: 100px;
+	}
+
+	h1 {
+		float: left;
+		padding: 40px;
+		margin-top: 42px;
+	}
+
+	h2 {
+		margin-bottom: 3px;
+		padding-top: 25px;
+	}
+
+	hr { //currently broken
+		display: none;
+		transform: rotate(90deg);
+	}
+}
+
+.lesson_block_marco {
+	height: 200px;
+width: 480px;
+background-color: #00AA55;
+border-top: 1px solid #4dc488;
+border-right: 1px solid #032615;
+border-bottom: 1px solid #032615;
 }
 
 .lesson_summary {
