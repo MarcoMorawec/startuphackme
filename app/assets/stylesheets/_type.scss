@@ -5,6 +5,7 @@
 	$bold-color: rgba(236, 237, 238, 1.0000); //off-white
 	$name-color: #00AA55; //green
 	$light-text: rgba(255, 255, 255, 1.0000); //white
+	$dark-color: black;
 
 	// Font Variables
 	$subhead-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
@@ -84,7 +85,7 @@ body {
 
 // Curators Section
 .team-header {
-	color: $bold-color;
+	color: $dark-color;
 	font-family: $special-light;
 	font-size: 2em;
 	font-weight: lighter;

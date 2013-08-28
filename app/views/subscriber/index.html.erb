@@ -1,5 +1,5 @@
 <section class="span8 offset2 text-center main-message-box">
-	<h2 class="main-message">A weekly guide to startups: from finding your idea to founding your dream</h2>
+	<h2 class="main-message">An Easy to Follow Course for Entrepreneurs in the Startup World</h2>
 </section>
 <section class="span6 offset3 text-center signup sign-up-well">
 	<%= simple_form_for :subscriber, :url => {:action => 'create'}, class: "form_field", :method => 'post', :html => {:class => 'form-horizontal' } do |f| %>
@@ -15,6 +15,28 @@
 	<h2 class="secondary-message">The path from idea to success is paved with the work of people who have done it before. Learn from the best minds in the startup world through weekly lessons.</h2>
 </section>
 </div>
+
+<!-- What you get Section -->
+<section class="row">
+	<h1 class="what_you_get text-center">What you get</h1>
+	<div class="span12 text-center">
+		<div class="span4">
+			<%= image_tag('bulb.png', :class => '') %>
+			<p>Here goes the marketin imgs</p>
+		</div>
+		<div class="span4">
+			<%= image_tag('bulb.png', :class => '') %>
+			<p>Here goes the marketin imgs</p>
+		</div>
+		<div class="span4">
+			<%= image_tag('bulb.png', :class => '') %>
+			<p>Here goes the marketin imgs</p>
+		</div>				
+	</div>
+</section>
+<!-- END // What you get Section -->
+
+<!-- Founding Team Section -->
 <section class="row">
 	<div class="span12 text-center">
 			<hr class="hr_main">
@@ -24,7 +46,7 @@
 			<div class="span12">
 				<div class="span2"></div>
 			<div class="span2 text-center">
-				<%= image_tag('marco_bw.png', :class => 'team-shots'	)	 %>
+				<%= image_tag('marco_bw.png', :class => 'team-shots') %>
 				<h1 class="team-name">Marco Morawec</h1>
 				<hr class="hr_shadow">
 				<h2 class="team-job">Web Developer</h2>
