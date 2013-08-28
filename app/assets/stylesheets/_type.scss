@@ -114,19 +114,19 @@ body {
 .team-name {
 	color: $name-color;
 	font-family: $special-light;
-	font-size: 1.5em;
+	font-size: 2.0em;
 	font-weight: lighter;
 	line-height: 1.1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .team-job {
-	color: rgba(236, 237, 238, 1.0000);
+	color: $name-color;
 	font-family: inherit;
-	font-size: .9em;
-	font-weight: lighter;
+	font-size: 1.1em;
+	font-weight: lighte;
 	line-height: 1.1;
-	letter-spacing: .15em;
+	letter-spacing: 0em;
 	text-transform: uppercase;
 }
 

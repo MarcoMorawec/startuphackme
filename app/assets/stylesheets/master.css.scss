@@ -55,6 +55,10 @@ header {
     padding-bottom: 0;
 }
 
+.nav-line {
+    line-height: 40px;
+}
+
 
 // header hr styling
 .hr_main {
@@ -67,6 +71,13 @@ header {
 .hr_shadow {
 	border: 0;
     background: rgba(255,255,255,.08);
+    height: .1em;
+    margin: 0;
+}
+
+.hr_shadow_founders {
+    border: 0;
+    background: rgba(0,0,0,.09);
     height: .1em;
     margin: 0;
 }
