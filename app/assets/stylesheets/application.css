@@ -18,7 +18,7 @@
  /* Gradient Texture */
  .gradient_bg {
  		/* fallback */
- 		background-color: #1d2030;
+ 		/*background-color: #1d2030;
 
  		/* No Texture Fallback*/
  		/*background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));*/
