@@ -5,33 +5,34 @@
 </script>
 
      
-	<!-- Modal -->
-	<% if user_signed_in? && (current_user.created_at + 5.seconds) > Time.now %>
-		<div id="lesson-social" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-		    <div class="modal-header text-center">
-			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			    <h3 id="myModalLabel" class="header-modal-message">Share the Love</h3>
-		    </div>
-		    <div class="modal-body text-center">
-			    <h2 class="main-modal-message">Know other awesome people who are excited about startups?</h2>
-				</br>
-				</br>
-				<div class="text-center">
-		    		<a href="https://twitter.com/intent/tweet?button_hashtag=StartupHack&text=Receive%20weekly%20curated%20Startup%20lessons%20from%20founders%20straight%20to%20your inbox%20&#151;%20via%20@StartupHackers" class="twitter-hashtag-button" data-lang="en" data-related="StartupHackers" data-size="large">Tweet #StartupHack</a>
+<!-- Modal -->
+<% if user_signed_in? && (current_user.created_at + 5.seconds) > Time.now %>
+	<div id="lesson-social" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-header text-center">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    <h3 id="myModalLabel" class="header-modal-message">Share the Love</h3>
+	    </div>
+	    <div class="modal-body text-center">
+		    <h2 class="main-modal-message">Know other awesome people who are excited about startups?</h2>
+			</br>
+			</br>
+			<div class="text-center">
+	    		<a href="https://twitter.com/intent/tweet?button_hashtag=StartupHack&text=Receive%20weekly%20curated%20Startup%20lessons%20from%20founders%20straight%20to%20your inbox%20&#151;%20via%20@StartupHackers" class="twitter-hashtag-button" data-lang="en" data-related="StartupHackers" data-size="large">Tweet #StartupHack</a>
 
-			    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-			    	</script>	
-			    </div>
+		    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		    	</script>	
 		    </div>
-		</div>
-	<% end %>
+	    </div>
+	</div>
+<% end %>
+<!-- End of Modal -->
 		    	
 
-	<% if @admin %>
-		<div class="span3 offset1">
-			<%= link_to('Create New Lesson', {:action => 'new' }, :class => 'btn btn-success') %>
-		</div>
-	<% end %>
+<% if @admin %>
+	<div class="span3 offset1">
+		<%= link_to('Create New Lesson', {:action => 'new' }, :class => 'btn btn-success') %>
+	</div>
+<% end %>
 
 <div class="offset3 span6 text-center box-top">
 	<% @lesson.each_slice(4) do |show| %>
@@ -67,10 +68,14 @@
 						<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
 				<% end %>
 			<% end %>
+		</div>
 	<% end %>
 </div>
 
 </div>
+</div>
+
+
 
 
 
