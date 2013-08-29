@@ -5,7 +5,7 @@
 	$bold-color: rgba(236, 237, 238, 1.0000); //off-white
 	$name-color: #00AA55; //green
 	$light-text: rgba(255, 255, 255, 1.0000); //white
-	$dark-color: black;
+	$dark-color: rgba(0, 0, 0, .8); //gray
 
 	// Font Variables
 	$subhead-font: 'Substance-Medium-DEMO', 'Helvetica', sans-serif;
@@ -70,15 +70,15 @@ body {
 }
 
 .marketing-message {
-	color: $bold-color;
+	color: $dark-color;
 	font-family: $special-light;
-	font-size: 4em;
-	font-weight: lighter;
+	font-size: 3em;
+	font-weight: lighte;
 	line-height: 1.1;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .secondary-marketing-message {
+	color: $dark-color;
 	font-family: $subhead-font;
     font-size: 2.0em;
     font-weight: lighter;
@@ -124,7 +124,6 @@ body {
 	color: $name-color;
 	font-family: inherit;
 	font-size: 1.1em;
-	font-weight: lighte;
 	line-height: 1.1;
 	letter-spacing: 0em;
 	text-transform: uppercase;

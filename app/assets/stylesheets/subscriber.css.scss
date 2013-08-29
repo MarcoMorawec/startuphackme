@@ -2,6 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//backgrounds
+
+.sign-up-background {
+	background: url('/assets/SIB001_texture_B.png');
+}
+
+.marketing-background {
+    background: url("/assets/SIB001_texture_A.png") repeat scroll 0 0 transparent;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.team-background {
+	background: url("/assets/SIB001_texture_A.png") repeat scroll 0 0 transparent;
+    background-color: rgba(0,0,0,.8);
+}
+
 
 
 //misc layout
@@ -96,11 +112,24 @@ form {
 // 	font-size: 34px;
 // }
 
-// Organizers Section Layout
-.team-background {
-	background: url('bg.png') repeat scroll 0 0 transparent;
+
+// Features Section Layout
+
+.marketing-message {
+	margin-top: 35px;
+	margin-bottom: 65px;
 }
 
+.secondary-marketing-message {
+	margin-bottom: 55px;
+}
+
+.index-icon {
+	margin-bottom: 20px;
+}
+
+
+// Team Section Layout
 .team-shots {
 	border: 2px solid rgba(31, 30, 52, 1.0000);
 	border-radius: 100%;
