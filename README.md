@@ -40,9 +40,48 @@ Amazon S3 integration for picture upload - done
 	- postmark (10k email/month free) integration
 
 - Create the new front-end designs
-	- lessond detail page
-	- homepage
-	- lesson overview page
+	- lessond detail page - done
+	- homepage - done
+	- lesson overview page - done
+
+- Pixel perfect edits:
+	home:
+		- change icons to green
+		- make sign-up button green -> gradient for sign-up button (#008947, #00A958), 1px border of #00A958
+		- margin of sign-up box should be 19px on left and right side of the sign-up field
+		- take out inner shadow of sign-up box and replace with inside border that's 3px and #dddddd
+		- width of sign-up box 276px (keep 3px boarder in mind - might need to go smaller)
+		- emboss feel for outside box of sign-up field, bottom boarder should be transparent and light
+		- "sign up" in all caps and bigger font, try 29px
+		- sign-up buttom is 155px and 55px tall
+		- text below sign-up should be Museo-500 font
+
+		- make font of feature copy smaller - 15px, copy left-centered, make text boxes smaller (200px wide)
+		- take shadow out of team pictures
+		- 1px border around team images, color of border #cccccc
+		- team title should be in museo
+		- border between features and team is 10% black on top and 50% white on bottom
+
+	Lesson overview:
+		-green boxes around each lesson description - 480px by 114px
+		- Take the green boxes away on mobile
+		- background should be gray light striped one
+
+	Lesson Detail page:
+		- vertical divider between number and copy should be - left black at 15% and white right at 20%
+		- space between name and title should be less
+		- intro description should be left-justified, font should be Museo-500
+		- Put in Marco's B/W foto (send email a big file of that photo)
+		- letter spacing should be less on title
+		- no shadow on "week 0"
+
+	LESS OF A PRIORITY:
+	Sign-up and sign-in
+		- should be gray/striped background
+
+	Top-nav:
+		- spacing between links should be less
+
 
 - email user new lessons link every 7 days
 
