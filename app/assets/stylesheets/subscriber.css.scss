@@ -133,23 +133,16 @@ form {
 
 // Team Section Layout
 
-.hr_main_team {
-	border: 0;
-    background: rgba(0,0,0,.5);
-    height: .1em;
-    margin: 0;
-}
 
 .hr_shadow_team {
-	border: 0;
-    background: rgba(255,255,255,.08);
+    border: 0;
+    background: rgba(0,0,0,.10);
     height: .1em;
     margin: 0;
 }
-
 .hr_shadow_team2 {
-    border: 0;
-    background: rgba(0,0,0,.09);
+	border: 0;
+    background: rgba(255,255,255,.50);
     height: .1em;
     margin: 0;
 }

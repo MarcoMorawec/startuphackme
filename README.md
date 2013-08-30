@@ -60,7 +60,7 @@ Amazon S3 integration for picture upload - done
 		- take shadow out of team pictures
 		- 1px border around team images, color of border #cccccc
 		- team title should be in museo
-		*- border between features and team is 10% black on top and 50% white on bottom
+		- border between features and team is 10% black on top and 50% white on bottom - done!
 
 	Lesson overview:
 		*-green boxes around each lesson description - 480px by 114px
