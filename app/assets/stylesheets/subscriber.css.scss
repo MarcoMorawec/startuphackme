@@ -14,8 +14,7 @@
 }
 
 .team-background {
-    background-color: rgba(255,255,255,1.0);
-    /*background: url("/assets/SIB001_texture_A.png");*/
+    background: url("/assets/SIB001_texture_A.png") repeat scroll 0 0 transparent;
     padding-bottom: 30px; //pushing down the footer without showing the main background 
 
 }
@@ -133,6 +132,29 @@ form {
 
 
 // Team Section Layout
+
+.hr_main_team {
+	border: 0;
+    background: rgba(0,0,0,.5);
+    height: .1em;
+    margin: 0;
+}
+
+.hr_shadow_team {
+	border: 0;
+    background: rgba(255,255,255,.08);
+    height: .1em;
+    margin: 0;
+}
+
+.hr_shadow_team2 {
+    border: 0;
+    background: rgba(0,0,0,.09);
+    height: .1em;
+    margin: 0;
+}
+
+
 .team-shots {
 	border: 2px solid rgba(255, 255, 255, 1.0000);
 	border-radius: 0%;
