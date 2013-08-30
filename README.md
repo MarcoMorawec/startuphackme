@@ -57,9 +57,9 @@ Amazon S3 integration for picture upload - done
 		- text below sign-up should be Museo-500 font - done!
 
 		*- make font of feature copy smaller - 15px, copy left-centered, make text boxes smaller (200px wide)
-		- take shadow out of team pictures
-		- 1px border around team images, color of border #cccccc
-		- team title should be in museo
+		- take shadow out of team pictures -> done!
+		- 1px border around team images, color of border #cccccc -> done!
+		- team title should be in museo -> done!
 		- border between features and team is 10% black on top and 50% white on bottom - done!
 
 	Lesson overview:
