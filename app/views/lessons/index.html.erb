@@ -27,6 +27,7 @@
 <% end %>
 
 <!-- End of Modal -->
+
 <section class="lesson-overview-background">		    	
 
 <% if @admin %>
@@ -40,7 +41,7 @@
 			
 		<h2 class="lesson-main-headline">MONTH <%= show.first.month %>
 		</h2>
-		<div class="lesson-bo">
+		<div class="lesson-box">
 			<% show.each do |lesson| %>
 				<% @loop_counter += 1  %>
 				<div class="row">
@@ -64,8 +65,7 @@
 						</div>
 					</div>
 				</div>
-					<hr class="hr_main">
-					<hr class="hr_shadow">	
+	
 				<% if @admin %>
 						<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
 						<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>

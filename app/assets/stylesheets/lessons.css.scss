@@ -4,6 +4,13 @@
 
 @import "_lessonsDetail.scss";
 
+
+//background for lesson overview padding-left
+
+.lesson-overview-background {
+    background: url("/assets/SIB001_texture_A.png") repeat scroll 0 0 transparent;
+}
+
 .inactive-link {
 	color: gray;
 }
@@ -42,8 +49,9 @@
 	}
 
 	h2 {
-		margin-bottom: 3px;
-		padding-top: 25px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 20px;
 	}
 
 	hr { //currently broken
