@@ -25,8 +25,9 @@
 	    </div>
 	</div>
 <% end %>
+
 <!-- End of Modal -->
-		    	
+<section class="lesson-overview-background">		    	
 
 <% if @admin %>
 	<div class="span3 offset1">
@@ -39,26 +40,28 @@
 			
 		<h2 class="lesson-main-headline">MONTH <%= show.first.month %>
 		</h2>
-		<div class="lesson-box">
+		<div class="lesson-bo">
 			<% show.each do |lesson| %>
 				<% @loop_counter += 1  %>
 				<div class="row">
-					<div class="span1">
-						<h2 class="week-number">
-							<%= lesson.week %>
-						</h2>
-					</div>
-					<div class="span10">
-						<h2 class="lesson-headline space">
+					<div class="lesson-overview-block">
+						<div class="span1">
+							<h2 class="week-number">
+								<%= lesson.week %>
+							</h2>
+						</div>
+						<div class="span10">
+							<h2 class="lesson-headline space">
 
-							<% if @full_weeks_since_signup  >= @loop_counter %>
-								<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
-							<% else %>
-								<section class="inactive-link">
-									<%= lesson.weekly_tagline %>
-								</section>
-							<% end %>
-						</h2>
+								<% if @full_weeks_since_signup  >= @loop_counter %>
+									<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
+								<% else %>
+									<section class="inactive-link">
+										<%= lesson.weekly_tagline %>
+									</section>
+								<% end %>
+							</h2>
+						</div>
 					</div>
 				</div>
 					<hr class="hr_main">
@@ -71,6 +74,8 @@
 		</div>
 	<% end %>
 </div>
+
+</section>
 
 
 

@@ -19,3 +19,35 @@
 .lesson-box .hr_shadow {
 	margin-bottom: 20px;
 }
+
+//lesson overview boxes
+
+.lesson-overview-block {
+	background: #00AA55; /* Old browsers */
+	border-top: 1px solid #4dc488;
+	border-right: 1px solid #032615;
+	border-bottom: 1px solid #032615;
+	height: 114px;
+	margin: 1px 0;
+	width: 480px;
+
+	&:first-child {
+		margin-top: 10px;
+	}
+
+	h1 {
+		float: left;
+		padding: 40px;
+		margin-top: 42px;
+	}
+
+	h2 {
+		margin-bottom: 3px;
+		padding-top: 25px;
+	}
+
+	hr { //currently broken
+		display: none;
+		transform: rotate(90deg);
+	}
+}
