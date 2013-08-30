@@ -52,9 +52,9 @@ Amazon S3 integration for picture upload - done
 		*- take out inner shadow of sign-up box and replace with inside border that's 3px and #dddddd -> done
 		- width of sign-up box 276px (keep 3px boarder in mind - might need to go smaller)
 		- emboss feel for outside box of sign-up field, bottom boarder should be transparent and light
-		- "sign up" in all caps and bigger font, try 29px
+		- "sign up" in all caps and bigger font, try 29px - done!
 		- sign-up buttom is 155px and 55px tall
-		- text below sign-up should be Museo-500 font
+		- text below sign-up should be Museo-500 font - done!
 
 		*- make font of feature copy smaller - 15px, copy left-centered, make text boxes smaller (200px wide)
 		- take shadow out of team pictures
