@@ -27,6 +27,11 @@
 	margin-bottom: 20px;
 }
 
+.lesson-headline.space {
+	margin-top: 46px;
+	margin-left: 20px;
+}
+
 //lesson overview boxes
 
 .lesson-overview-block {
@@ -36,7 +41,6 @@
 	border-bottom: 1px solid #032615;
 	height: 114px;
 	margin: 1px 0;
-	width: 480px;
 
 	&:first-child {
 		margin-top: 10px;
@@ -50,12 +54,16 @@
 
 	h2 {
 		margin-bottom: 10px;
-		padding-top: 10px;
-		padding-left: 20px;
+		padding: 20px;
 	}
 
 	hr { //currently broken
 		display: none;
 		transform: rotate(90deg);
 	}
+}
+
+.week-number {
+
+
 }

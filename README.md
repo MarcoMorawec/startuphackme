@@ -49,7 +49,7 @@ Amazon S3 integration for picture upload - done
 		- change icons to green -> done!
 		*- make sign-up button green -> gradient for sign-up button (#008947, #00A958), 1px border of #00A958 -> done!
 		- margin of sign-up box should be 19px on left and right side of the sign-up field
-		*- take out inner shadow of sign-up box and replace with inside border that's 3px and #dddddd -> done
+		*- take out inner shadow of sign-up box and replace with inside border that's 3px and #dddddd -> done!
 		- width of sign-up box 276px (keep 3px boarder in mind - might need to go smaller)
 		- emboss feel for outside box of sign-up field, bottom boarder should be transparent and light
 		- "sign up" in all caps and bigger font, try 29px - done!
