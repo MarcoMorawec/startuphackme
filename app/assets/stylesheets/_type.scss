@@ -141,7 +141,6 @@ body {
 	font-weight: bold;
 	line-height: 1.1;
 	letter-spacing: 0.3em;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .lesson-main-headline {
@@ -154,7 +153,14 @@ body {
 	color: #525252;
 }
 
-
+.lesson-plan-headline {
+	color: $light-text;
+	font-family: $special-light;
+	font-weight: lighter;
+	font-size: 3.1em;
+	font-weight: bold;
+	line-height: 1.1;
+}
 
  
 // Lesson Details Page
@@ -209,7 +215,7 @@ body {
 
 	.curator_block 
 
-	h1 {
+	h3 {
 		color: $name-color;
 		font-family: $special-light, sans-serif;
 		font-size: 2em;
@@ -217,7 +223,7 @@ body {
 		text-transform: none;
 	}
 
-	h2 {
+	h4 {
 		font-family: 'Museo-300';
 		font-size: 1.6em;
 		letter-spacing: .2em;

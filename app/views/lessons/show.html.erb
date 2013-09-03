@@ -1,7 +1,5 @@
 <div class="background-lesson-detail">
-<div class="container">
-	<div class="row box-top">
-
+	<div class="container">
 		<section class="span6 offset3 text-center lesson_summary">
 
 				<h1 class="lesson-week">
@@ -10,8 +8,8 @@
 				<h3 class="lesson-main-headline"><%= @lesson.main_headline %></h3>
 				<article class="curator_block">
 					<p><%= image_tag(@lesson.curator_url(:curator).to_s, :class => 'curator-shots') %></p>
-					<h1><%= @lesson.curator_name %></h1>
-					<h2><%= @lesson.curator_organization %></h2>
+					<h3><%= @lesson.curator_name %></h3>
+					<h4><%= @lesson.curator_organization %></h4>
 				</article>
 				<div class="span">
 					<p><%= @lesson.description %></p>
@@ -20,8 +18,9 @@
 	</div>
 </div> <!-- end of lesson detail background -->
 
-		<section class="span6 offset3">
-			<!--<h1 class="">Lesson Plan</h1>-->
+	<section class= "lesson-plan-section">
+		<div class="span6 offset3">
+			<h1 class="text-center lesson-plan-headline">LESSON PLAN</h1>
 			<article class="lesson_block">
 				<h1>1</h1>
 				<hr>
@@ -53,9 +52,9 @@
 				<p><%= @lesson.fourth_ressource_text%></p>
 				<task class="task">TASK: </task><p><%= @lesson.fourth_ressource_task %></p>
 			</article>
-		</section>
+		</div>
+	</section>
 	
-
 	
 
 	<div class="span5 offset3">
