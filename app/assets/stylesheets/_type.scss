@@ -125,8 +125,17 @@ body {
 	text-transform: uppercase;
 }
 
-.week-number {
+.week-number-active {
 	color: $bold-color;
+	font-family: $special-light;
+	font-size: 4.0em;
+	font-weight: bold;
+	line-height: 1.1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.week-number-inactive {
+	color: rgba(255,255,255,0.9);
 	font-family: $special-light;
 	font-size: 4.0em;
 	font-weight: bold;

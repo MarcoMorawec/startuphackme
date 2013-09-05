@@ -43,24 +43,35 @@
 						<% @loop_counter += 1  %>
 							
 							<div class="row">
-								<div class="lesson-overview-block">
-									<div class="span1">
-										<h2 class="week-number week-number-circle">
-											<%= lesson.week %>
-										</h2>
+								<% if @full_weeks_since_signup  >= @loop_counter %>
+									<div class="lesson-overview-block">
+										<div class="span1">
+											<h2 class="week-number-active week-number-circle-active">
+												<%= lesson.week %>
+											</h2>
+										</div>
+										<div class="span11">
+											<section class="lesson-headline space">
+													<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
+											</section>
+										</div>
 									</div>
-									<div class="span11">
-										<section class="lesson-headline space">
-											<% if @full_weeks_since_signup  >= @loop_counter %>
-												<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
-											<% else %>
+								<% else %>
+									<div class="lesson-overview-block">
+										<div class="span1">
+											<h2 class="week-number-inactive week-number-circle-inactive">
+												<%= lesson.week %>
+											</h2>
+										</div>
+										<div class="span11">
+											<section class="lesson-headline space">			
 												<section class="inactive-link">
 													<%= lesson.weekly_tagline %>
 												</section>
-											<% end %>
-										</section>
-									</div>
-								</div>
+											</section>
+										</div>
+									</div>								
+								<% end %>
 							</div>
 			
 						<% if @admin %>

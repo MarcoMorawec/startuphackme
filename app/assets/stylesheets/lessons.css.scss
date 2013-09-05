@@ -32,7 +32,7 @@
 	margin-left: 5%;
 }
 
-.week-number-circle {	
+.week-number-circle-active {	
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;
@@ -44,6 +44,21 @@
 
     background: #00AA55;
     border: 2px solid #00AA55;
+    text-align: center;
+}
+
+.week-number-circle-inactive {	
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(PIE.htc);
+
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    background: rgba(0,0,0,0.2);
+    border: 0.5px solid rgba(0,0,0,0.2);
     text-align: center;
 }
 
