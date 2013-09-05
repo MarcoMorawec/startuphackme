@@ -40,8 +40,7 @@
 					MONTH <%= show.first.month %>
 				</h2>
 					<% show.each do |lesson| %>
-						<% @loop_counter += 1  %>
-							
+						<% @loop_counter += 1  %>	
 							<div class="row">
 								<% if @full_weeks_since_signup  >= @loop_counter %>
 									<div class="lesson-overview-block">
@@ -52,7 +51,7 @@
 										</div>
 										<div class="span11">
 											<section class="lesson-headline space">
-													<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
+													<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'lesson-headline-hover') %>
 											</section>
 										</div>
 									</div>
