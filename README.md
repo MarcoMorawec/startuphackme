@@ -2,6 +2,7 @@ A weekly guide to startups, from finding your idea to founding your dream
 
 Handcrafted by @marcomorawec and @igirard
 
+--> This app runs mailcatcher
 
 __To DO__
 
@@ -32,9 +33,15 @@ Amazon S3 integration for picture upload - done
 - delete the white lines on lesson overview page - done
 - Install Google Analytics - exclude internal traffic via cookie - done
 
-- send user email after sign-up with link to first lesson
 
-- send user email every 7 days reminding them that a new lesson is available
+- email user after sign-up
+	- mailcatcher - done
+	- gmail integration - done 
+- send user email after sign-up with link to first lesson - done!
+- get email address set-up hello@startuphack.it - changed MX records on 101, waiting for propagation - done
+
+- send user email every 7 days reminding them that a new lesson is available	
+- postmark (10k email/month free) integration
 
 
 

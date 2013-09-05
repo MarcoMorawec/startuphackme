@@ -41,4 +41,19 @@
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf )
 
+  #running the mail catcher in development mode
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+
+  # Gmail configuration
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'Startuphack.it',
+    user_name:            ENV['GMAIL_USERNAME'],
+    password:             ENV['GMAIL_PASSWORD'],
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+
 end
