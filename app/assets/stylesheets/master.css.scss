@@ -38,6 +38,14 @@ header {
     height: 60px;
 }
 
+body,html{
+ height:100%;
+}
+
+.container{
+ min-height:100%;
+}
+
 
 // layout and positioning
 .content_wrap {
@@ -91,5 +99,5 @@ header {
 footer {
     background: $light-bg-texture, $lighten-texture;
     padding-top: 30px;
-	padding-bottom: 5px;
+	padding-bottom: 5px;    
 }
