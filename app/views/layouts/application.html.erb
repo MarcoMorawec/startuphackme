@@ -52,11 +52,17 @@
       <%= yield %>
     </div>
   </div>
-    <div class="footer">
+  <% if @page_title == "Sign" %>
+    <div class="navbar navbar-fixed-bottom">
         <footer class="text-center">
           <p>Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts.</p>
         </footer>
     </div>
+    <% else %>
+        <footer class="text-center">
+          <p>Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts.</p>
+        </footer>
+    <% end %>
     </div>
   </div>
 </body>
