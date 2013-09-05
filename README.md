@@ -84,6 +84,7 @@ Amazon S3 integration for picture upload - done
 
 
 - email user new lessons link every 7 days
+- add markdown to CMS (urls need to be active)
 
 
 

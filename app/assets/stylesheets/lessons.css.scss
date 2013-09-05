@@ -32,10 +32,26 @@
 	margin-left: 20px;
 }
 
+.week-number-circle {	
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(PIE.htc);
+
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    background: #00AA55;
+    border: 2px solid #00AA55;
+    text-align: center;
+}
+
+
 //lesson overview boxes
 
-.lesson-overview-block {
-	background: #00AA55; /* Old browsers */
+/*.lesson-overview-block {
+	background: #00AA55; 
 	border-top: 1px solid #4dc488;
 	border-right: 1px solid #032615;
 	border-bottom: 1px solid #032615;
@@ -62,6 +78,8 @@
 		transform: rotate(90deg);
 	}
 }
+
+*/
 
 .week-number {
 
