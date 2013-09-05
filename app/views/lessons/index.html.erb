@@ -58,7 +58,6 @@
 													<%= lesson.weekly_tagline %>
 												</section>
 											<% end %>
-
 										</section>
 									</div>
 								</div>
@@ -69,6 +68,8 @@
 								<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
 						<% end %>
 					<% end %>
+				<hr class="hr_shadow_lesson">
+				<hr class="hr_shadow_lesson2">
 			<% end %>
 			
 		</div>

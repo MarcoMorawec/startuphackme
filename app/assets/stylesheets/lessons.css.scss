@@ -47,6 +47,19 @@
     text-align: center;
 }
 
+.hr_shadow_lesson {
+    border: 0;
+    background: rgba(0,0,0,.10);
+    height: .1em;
+    margin: 0;
+    margin-top: 20px;
+}
+.hr_shadow_lesson2 {
+	border: 0;
+    background: rgba(255,255,255,.50);
+    height: .1em;
+    margin: 0;
+}
 
 //lesson overview boxes
 
@@ -80,8 +93,3 @@
 }
 
 */
-
-.week-number {
-
-
-}
