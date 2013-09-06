@@ -49,7 +49,7 @@ before_filter :authenticate_user!, :except => [:index]
 
 	def update
 		@lesson = Lesson.find(params[:id])
-		if @lesson = @lesson.update_attributes(params[:lesson])
+		if @lesson.update_attributes(params[:lesson])
 			flash[:notice] = "Alright buddy, your Lesson is updated!"
 			redirect_to(:action => 'show')
 		else
