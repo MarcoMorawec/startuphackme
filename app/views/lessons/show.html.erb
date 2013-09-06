@@ -1,12 +1,32 @@
-<div class="container">
-	<div class="row box-top">
+<div class="background-lesson-detail">
+	<div class="container">
+		<section class="span6 offset3 text-center lesson_summary">
 
-		<section class="span4 offset1">
+				<h1 class="lesson-week">
+					Week <%= @lesson.week %>
+				</h1>
+				<h3 class="lesson-main-headline"><%= @lesson.main_headline %></h3>
+				<article class="curator_block">
+					<p><%= image_tag(@lesson.curator_url(:curator).to_s, :class => 'curator-shots') %></p>
+					<h3><%= @lesson.curator_name %></h3>
+					<h4><%= @lesson.curator_organization %></h4>
+				</article>
+				<div class="span">
+					<p><%= @lesson.description %></p>
+				</div>
+		</section>
+	</div>
+</div> <!-- end of lesson detail background -->
+
+	<section class= "lesson-plan-section">
+		<div class="span6 offset3">
+			<h1 class="text-center lesson-plan-headline">LESSON PLAN</h1>
 			<article class="lesson_block">
 				<h1>1</h1>
 				<hr>
 				<h2><%= link_to(@lesson.first_ressource_headline, @lesson.first_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
-				<p><%= @lesson.first_ressource_text%></p>
+				<p><%= @lesson.first_ressource_text %></p>
+				<task class="task">TASK: </task><p><%= @lesson.first_ressource_task %></p>
 			</article>
 
 			<article class="lesson_block">
@@ -14,6 +34,7 @@
 				<hr>
 				<h2><%= link_to(@lesson.second_ressource_headline, @lesson.second_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
 				<p><%= @lesson.second_ressource_text%></p>
+				<task class="task">TASK: </task><p><%= @lesson.second_ressource_task %></p>		
 			</article>
 
 			<article class="lesson_block">
@@ -21,6 +42,7 @@
 				<hr>
 				<h2><%= link_to(@lesson.third_ressource_headline, @lesson.third_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
 				<p><%= @lesson.third_ressource_text%></p>
+				<task class="task">TASK: </task><p><%= @lesson.third_ressource_task %></p>		
 			</article>
 
 			<article class="lesson_block">
@@ -28,32 +50,12 @@
 				<hr>
 				<h2><%= link_to(@lesson.fourth_ressource_headline, @lesson.fourth_ressource_headline_link, :class => 'no-style-link-lesson', target: "_blank") %></h2>
 				<p><%= @lesson.fourth_ressource_text%></p>
+				<task class="task">TASK: </task><p><%= @lesson.fourth_ressource_task %></p>
 			</article>
-		</section>
-
-		<section class="span5 offset1 lesson_summary">
-
-			<h1 class="lesson-week">
-				Week <%= @lesson.week %>
-			</h1>
-			<h2 class="lesson-main-headline"><%= @lesson.main_headline %></h2>
-
-			<p><%= @lesson.description %></p>
-						<hr class="hr_main">
-
-
-			<div class="row">
-				<article class="curator_block">
-					<p><%= image_tag(@lesson.curator_url(:curator).to_s, :class => 'team-shots') %></p>
-					<h1><%= @lesson.curator_name %></h1>
-					<h2><%= @lesson.curator_organization %></h2>
-				<div class="span">
-					<p><%= @lesson.curator_description %></p>
-				</div>
-				</article>
-			</div>
 		</div>
-	</div>
+	</section>
+	
+	
 
 	<div class="span5 offset3">
 		<% if @admin %>
@@ -63,4 +65,5 @@
 		<% end %>
 	</div>
 
-</section>
+</div>
+</div>

@@ -4,8 +4,15 @@
 
 @import "_lessonsDetail.scss";
 
+
+//background for lesson overview padding-left
+
+.lesson-overview-background {
+    background: url("/assets/SIB001_texture_A.png") repeat scroll 0 0 transparent;
+}
+
 .inactive-link {
-	color: gray;
+	color: rgba(0,0,0,0.2);
 }
 
 .lesson-box {
@@ -13,9 +20,97 @@
 }
 
 .lesson-main-headline {
-	padding-top: 25px;
+	padding-top: 10px;
 }
 
 .lesson-box .hr_shadow {
 	margin-bottom: 20px;
 }
+
+.lesson-headline.space {
+	margin-top: 24px;
+	margin-left: 5%;
+}
+
+.week-number-circle-active {	
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(PIE.htc);
+
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+
+    background: #00AA55;
+    border: 2px solid #00AA55;
+    text-align: center;
+}
+
+.week-number-circle-inactive {	
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(PIE.htc);
+
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+
+    background: rgba(0,0,0,0.15);
+    border: 0.1px solid rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.hr_shadow_lesson {
+    border: 0;
+    background: rgba(0,0,0,.10);
+    height: .1em;
+    margin: 0;
+    margin-top: 20px;
+}
+.hr_shadow_lesson2 {
+	border: 0;
+    background: rgba(255,255,255,.50);
+    height: .1em;
+    margin: 0;
+}
+
+.lesson-overview-block {
+	margin-bottom: 15%;
+
+
+}
+
+//lesson overview boxes
+
+/*.lesson-overview-block {
+	background: #00AA55; 
+	border-top: 1px solid #4dc488;
+	border-right: 1px solid #032615;
+	border-bottom: 1px solid #032615;
+	height: 114px;
+	margin: 1px 0;
+
+	&:first-child {
+		margin-top: 10px;
+	}
+
+	h1 {
+		float: left;
+		padding: 40px;
+		margin-top: 42px;
+	}
+
+	h2 {
+		margin-bottom: 10px;
+		padding: 20px;
+	}
+
+	hr { //currently broken
+		display: none;
+		transform: rotate(90deg);
+	}
+}
+
+*/

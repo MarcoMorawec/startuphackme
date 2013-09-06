@@ -29,6 +29,32 @@
 // Example:
 // @linkColor: #ff0000;
 
-body {
-	background: url('/assets/light_toast_dark_trans.png'), rgba(28, 48, 83, 1.0000);
+// link coloring over-ride
+a, a:hover {
+	color: white;
+	text-decoration: none;
 }
+
+li.nav-line {
+    line-height: 40px;
+}
+
+//override of the standard green bootstrap button
+.btn-success {
+    background-image: linear-gradient(to bottom, #008947, #00A958);
+}
+.btn-large {
+    font-size: 29px;
+}
+
+body,html{
+ height:100%;
+}
+.container{
+ min-height:100%;
+}
+.footer{
+ height:40px;
+ margin-top:0px;
+}
+

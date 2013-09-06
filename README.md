@@ -39,10 +39,55 @@ Amazon S3 integration for picture upload - done
 	- gmail integration - done 
 - send user email after sign-up with link to first lesson - done!
 - get email address set-up hello@startuphack.it - changed MX records on 101, waiting for propagation - done
+- get email address set-up hello@startuphack.it - done
+
 
 - send user email every 7 days reminding them that a new lesson is available	
 - postmark (10k email/month free) integration
 
+- Create the new front-end designs
+	- lessond detail page - done
+	- homepage - done
+	- lesson overview page - done
+
+- Pixel perfect edits:
+	home:
+		- change icons to green -> done!
+		- make sign-up button green -> gradient for sign-up button (#008947, #00A958), 1px border of #00A958 -> done!
+		- margin of sign-up box should be 19px on left and right side of the sign-up field
+		- take out inner shadow of sign-up box and replace with inside border that's 3px and #dddddd -> done!
+		- width of sign-up box 276px (keep 3px boarder in mind - might need to go smaller)
+		- emboss feel for outside box of sign-up field, bottom boarder should be transparent and light
+		- "sign up" in all caps and bigger font, try 29px - done!
+		- sign-up buttom is 155px and 55px tall
+		- text below sign-up should be Museo-500 font - done!
+
+		- make font of feature copy smaller - 15px, copy left-centered, make text boxes smaller (200px wide)
+		- take shadow out of team pictures -> done!
+		- 1px border around team images, color of border #cccccc -> done!
+		- team title should be in museo -> done!
+		- border between features and team is 10% black on top and 50% white on bottom - done!
+
+	Lesson overview:
+		- background should be gray light striped one
+
+	Lesson Detail page:
+		- space between name and title should be less
+		- intro description should be left-justified, font should be Museo-500
+		- Put in Marco's B/W foto (send email a big file of that photo)
+		- letter spacing should be less on title
+		- no shadow on "week 0"
+
+	LESS OF A PRIORITY:
+	Sign-up and sign-in
+		- should be gray/striped background
+
+	Top-nav:
+		- spacing between links should be less
+
+
+- email user new lessons link every 7 days
+- add markdown to CMS (urls need to be active)
 
 
 

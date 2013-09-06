@@ -1,3 +1,5 @@
+<% @page_title = "Sign" %>
+
 <div class="offset3 span6 text-center">
 	<h2 class="main-message">Sign In</h2>
 		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
@@ -6,8 +8,9 @@
 		    <%= f.input :password, label: false, placeholder: 'Your Password', :required => false %>
 		  </div>
 
-		    <%= f.button :submit, "Sign In", :class => 'btn btn-primary btn-large custom-button'  %>		<% end %>
-
+		    <%= f.button :submit, "SIGN IN", :class => 'btn btn-success btn-large custom-button'  %>		
+		<% end %>
+	</br>
 
 		<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
 		  <%= link_to "or Sign up", new_registration_path(resource_name), :class => 'team-name no-style-link' %><br />

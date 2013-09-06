@@ -5,72 +5,90 @@
 </script>
 
      
-	<!-- Modal -->
-	<% if user_signed_in? && (current_user.created_at + 5.seconds) > Time.now %>
-		<div id="lesson-social" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-		    <div class="modal-header text-center">
-			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			    <h3 id="myModalLabel" class="header-modal-message">Share the Love</h3>
+<!-- Modal -->
+<% if user_signed_in? && (current_user.created_at + 5.seconds) > Time.now %>
+	<div id="lesson-social" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-header text-center">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    <h3 id="myModalLabel" class="header-modal-message">Share the Love</h3>
+	    </div>
+	    <div class="modal-body text-center">
+		    <h2 class="main-modal-message">Know other awesome people who are excited about startups?</h2>
+			</br>
+			</br>
+			<div class="text-center">
+	    		<a href="https://twitter.com/intent/tweet?button_hashtag=StartupHack&text=Receive%20weekly%20curated%20Startup%20lessons%20from%20founders%20straight%20to%20your inbox%20&#151;%20via%20@StartupHackers" class="twitter-hashtag-button" data-lang="en" data-related="StartupHackers" data-size="large">Tweet #StartupHack</a>
+
+		    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		    	</script>	
 		    </div>
-		    <div class="modal-body text-center">
-			    <h2 class="main-modal-message">Know other awesome people who are excited about startups?</h2>
-				</br>
-				</br>
-				<div class="text-center">
-		    		<a href="https://twitter.com/intent/tweet?button_hashtag=StartupHack&text=Receive%20weekly%20curated%20Startup%20lessons%20from%20founders%20straight%20to%20your inbox%20&#151;%20via%20@StartupHackers" class="twitter-hashtag-button" data-lang="en" data-related="StartupHackers" data-size="large">Tweet #StartupHack</a>
+	    </div>
+	</div>
+<% end %>
+<!-- End of Modal -->
 
-			    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-			    	</script>	
-			    </div>
-		    </div>
-		</div>
-	<% end %>
-		    	
+<div class="lesson-overview-background">
+	<div class="container">
+		<div class="span6 offset3">
 
-	<% if @admin %>
-		<div class="span3 offset1">
-			<%= link_to('Create New Lesson', {:action => 'new' }, :class => 'btn btn-success') %>
-		</div>
-	<% end %>
+		<% if @admin %>		
+				<%= link_to('Create New Lesson', {:action => 'new' }, :class => 'btn btn-large btn-success') %>
+		<% end %>
 
-<div class="offset3 span6 text-center box-top">
-	<% @lesson.each_slice(4) do |show| %>
+			<% @lesson.each_slice(4) do |show| %>
+				<h2 class="lesson-main-headline text-center">
+					MONTH <%= show.first.month %>
+				</h2>
+					<% show.each do |lesson| %>
+						<% @loop_counter += 1  %>	
+							<div class="row">
+								<% if @full_weeks_since_signup  >= @loop_counter %>
+									<div class="lesson-overview-block">
+										<div class="span1">
+											<h2 class="week-number-active week-number-circle-active">
+												<%= lesson.week %>
+											</h2>
+										</div>
+										<div class="span11">
+											<section class="lesson-headline space">
+													<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'lesson-headline-hover') %>
+											</section>
+										</div>
+									</div>
+								<% else %>
+									<div class="lesson-overview-block">
+										<div class="span1">
+											<h2 class="week-number-inactive week-number-circle-inactive">
+												<%= lesson.week %>
+											</h2>
+										</div>
+										<div class="span11">
+											<section class="lesson-headline space">			
+												<section class="inactive-link">
+													<%= lesson.weekly_tagline %>
+												</section>
+											</section>
+										</div>
+									</div>								
+								<% end %>
+							</div>
 			
-		<h2 class="lesson-main-headline">MONTH <%= show.first.month %>
-		</h2>
-		<div class="lesson-box">
-			<% show.each do |lesson| %>
-				<% @loop_counter += 1  %>
-				<div class="row">
-					<div class="span1">
-						<h2 class="week-number">
-							<%= lesson.week %>
-						</h2>
-					</div>
-					<div class="span10">
-						<h2 class="lesson-headline space">
-
-							<% if @full_weeks_since_signup  >= @loop_counter %>
-								<%= link_to(lesson.weekly_tagline, {:action => 'show', :id => lesson.id}, :class => 'no-style-link') %>
-							<% else %>
-								<section class="inactive-link">
-									<%= lesson.weekly_tagline %>
-								</section>
-							<% end %>
-						</h2>
-					</div>
-				</div>
-					<hr class="hr_main">
-					<hr class="hr_shadow">	
-				<% if @admin %>
-						<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
-						<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
-				<% end %>
+						<% if @admin %>
+								<%= link_to('Edit Lesson', {:action => 'edit', :id => lesson.id }, :class => 'btn btn-mini') %>
+								<%= link_to('Delete Lesson', {:action => 'destroy', :id => lesson.id }, :method => 'delete', :confirm => 'Are you sure you want to delete this lesson?', :class => 'btn btn-mini btn-danger') %>
+						<% end %>
+					<% end %>
+				<hr class="hr_shadow_lesson">
+				<hr class="hr_shadow_lesson2">
 			<% end %>
-	<% end %>
+			
+		</div>
+	</div>
 </div>
 
-</div>
+
+
+
 
 
 
