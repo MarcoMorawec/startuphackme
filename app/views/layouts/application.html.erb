@@ -55,12 +55,18 @@
   <% if @page_title == "Sign" %>
     <div class="navbar navbar-fixed-bottom">
         <footer class="text-center">
-          <p>Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts.</p>
+          Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts |
+          <%= link_to('Privacy', '#', :class => 'footer-spacing footer-link') %> |
+          <%= mail_to('hello@startuphack.it', 'Contact', :class => 'footer-spacing footer-link') %>
+          <p /> 
         </footer>
     </div>
     <% else %>
         <footer class="text-center">
-          <p>Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts.</p>
+          Startup Hack. &copy;2013. Proudly Hacked in Boston, Massachusetts |
+          <%= link_to('Privacy', '#', :class => 'footer-spacing footer-link') %> |
+          <%= mail_to('hello@startuphack.it', 'Contact', :class => 'footer-spacing footer-link') %>
+          <p />    
         </footer>
     <% end %>
     </div>
