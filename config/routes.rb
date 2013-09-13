@@ -6,7 +6,9 @@ Startuphackme::Application.routes.draw do
 
   resources :lessons
   resources :subscriber
-  resources :privacy
+  # resources :privacy
+
+  get 'privacy', :to => 'static#privacy'
 
 
 
